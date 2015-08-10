@@ -1,0 +1,33 @@
+/*					Footer
+|============================================
+|
+|
+|*/
+
+footer[role='contentinfo'] {
+	border-top: 1px solid $tertiaryColor;
+	text-align: center;
+	width: 100%;
+
+	ul.social-media {
+    	padding: 1em 0px 0px;
+	}
+
+	ul.social-media a {
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+	}
+
+	ul.social-media li + li {
+		margin-left: 1em;
+	}
+	li {
+		display: inline-block;
+	}
+
+	div.copyright {
+		padding: 1em 0;
+		line-height: 1.55em;
+	}
+}

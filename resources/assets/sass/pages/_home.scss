@@ -1,0 +1,53 @@
+/*					Home Page
+|============================================
+|
+|
+|*/
+article#home {
+	div.looking-glass {
+		width: 100%;
+		height: 450px;
+		background: transparent url(/images/homeslider.jpg) no-repeat fixed center center / cover;
+		color: #fff;
+		@include breakpoint(tablet) {
+			height: 250px;
+		}
+	}
+
+	div.looking-glass section.intro {
+		text-align: center;
+		padding: 5em 1em;
+		@include breakpoint(tablet) {
+			padding-top: 2em;
+			font-size: 80%;
+		}
+	}
+
+	div.looking-glass section.intro div {
+		padding: 1.5em 0;
+	}
+
+	div.looking-glass img.avatar {
+		width: 150px;
+		border-radius: 50%;
+		@include breakpoint(tablet) {
+			width: 90px;
+		}
+	}
+
+	 span.hightlight {
+	 	color: $secondaryColor;
+	 }
+
+	 div.project-container {
+	 	max-width: 600px;
+	 	margin: 0 auto;
+
+	 }
+
+	 div.row {
+	 	padding: 3em 1em;
+	 }
+
+
+}

@@ -1,0 +1,61 @@
+/*					Forms
+|============================================
+|
+|
+|*/
+
+form#contact-form {
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1em 1.5em;
+	text-align: left;
+}
+
+form label {
+	font-size: .9em;
+	padding-left: .30em;
+	position: absolute;
+	left: -9999999px;
+	height: 0px;
+	width: 0px;
+
+}
+
+form input,
+form textarea,
+form button,
+.btn-std {
+	width: 100%;
+	padding: .75em;
+	margin: 0 auto 1.5em 0;
+	display: block;
+	border-radius: 5px;
+	border: 1px solid $tertiaryColor;
+	font-size: 1em;
+	box-shadow: none;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearnace: none;
+}
+
+form textarea {
+	resize: none;
+	font-family: Helvetica;
+}
+
+form button,
+.btn-std {
+	background: $secondaryColor;
+	color: #fff;
+	border: 2px solid $secondaryColor;
+	background: opacity($secondaryColor, .8);
+	cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+input[type]:focus {
+	border-color: $secondaryColor;
+	outline: none;
+}

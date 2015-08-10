@@ -1,0 +1,34 @@
+article#contact {
+	text-align: center;
+
+	div#contact-banner {
+		height: 200px;
+		width: 100%;
+		overflow: hidden;
+		@include breakpoint(phablet) {
+			display: none;
+		}
+	}
+
+	section#contact-container {
+	    max-width: 500px;
+	    height: 450px;
+	    margin: 0 auto;
+	    width: 90%;
+	}
+
+	p {
+		font-size: 1.25em;
+		line-height: 1.10em;
+		padding: 1em;
+	}
+
+	p.email {
+		font-size: 1.5em;
+	}
+
+	div.section-broadcast {
+		margin-top: 1em;
+	}
+
+}

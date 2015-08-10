@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    .email-background {
+        padding: 10px;
+        background: #eee;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    .pre-header {
+        text-align: center;
+        font-size: 24px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px 0;
+        background: #fff;
+
+    }
+
+    .email-container {
+        max-width: 600px;
+        font-size: 16px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-top: 2px solid #eee;
+        background: #fff;
+    }
+
+    .confirmation-message {
+        padding: 20px 0;
+    }
+
+    div.original-message {
+        border-top: 2px solid #eee;
+        padding: 10px 0;
+    }
+
+    div.original-message h2 {
+        text-align: center;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .email-footer {
+        max-width: 600px;
+        margin: 0 auto;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    p {
+        margin: 15px;
+    }
+
+    a {
+        color: rgb(0, 181, 181);
+        text-decoration: none;;
+    }
+
+    ul {
+        width: 100%;
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        padding: 10px 0;
+        border-top: 2px solid #eee;
+    }
+</style>
+<body>
+<div class="email-background">
+    <div class="pre-header">
+        <a href="http://www.jncampbell.com">jncampbell.com</a>
+    </div>
+    <div class="email-container">
+        <div class="confirmation-message">
+            <p>
+                Hey! Your message to <a href="http://www.jncampbell.com">jncampbell.com</a> was
+                successfully sent. Below are the details of your message in case you ever want
+                to refer to it. Thanks for reaching out!
+            </p>
+        </div>
+        <div class="original-message">
+            <h2>Your original message</h2>
+            <p><span class="bold">Sent:</span> {{ $originalSendDatetime }} </p>
+            <p><span class="bold">Subject:</span> {{ $originalSubject }}</p>
+            <p><span class="bold">Message:</span> {{ $originalMessage }}</p>
+
+        </div>
+    </div>
+    <div class="email-footer">
+        <ul>
+            <li><a href="">Visit Site</a></li>
+            <li><a href="">I did not send this message</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

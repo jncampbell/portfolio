@@ -1,0 +1,89 @@
+/*					Typography
+|============================================
+|
+|
+|*/
+
+body {
+	font: 100% 'Open Sans', sans-serif;
+	@include breakpoint(tablet) {
+		font-size: 90%;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav#site-nav ul,
+nav#mobile-nav ul {
+	text-transform: capitalize;
+}
+
+div#site-logo {
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 1.75em;
+	line-height: 1.5em;
+}
+
+h2 {
+	font-size: 1.50em;
+}
+
+h3, 
+h4, 
+h5, 
+h6 {
+	font-size: 1.25em;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+p a {
+	color: $secondaryColor;
+}
+a:hover {
+	color: $secondaryColor;
+}
+
+a:focus {
+
+}
+
+a:active {
+
+}
+
+p.light {
+	font-weight: 300;
+}
+
+.hightlight,
+.submission-success {
+	color: $secondaryColor;
+}
+
+.error {
+	color: rgb(207, 0, 15);
+}
+
+.font-small {
+	font-size: .9em;	
+}
+
+
+
+
+
+
+
+
+

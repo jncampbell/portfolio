@@ -1,0 +1,23 @@
+article#about {
+
+	div#about-banner {
+		height: 200px;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	section.about-section {
+		max-width: 600px;
+		margin: 40px auto;
+	}
+
+	section.about-section {
+		font-size: 1.1em;
+		line-height: 1.5em;
+	}
+
+	section.about-section p {
+		margin-bottom: 2em;
+	}
+
+}
