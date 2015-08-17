@@ -4,17 +4,17 @@
 |
 |*/
 article#home {
-	div.looking-glass {
+	.looking-glass {
 		width: 100%;
 		height: 450px;
-		background: transparent url(/images/homeslider.jpg) no-repeat fixed center center / cover;
+		background: transparent url(/images/space-code.jpg) no-repeat fixed center center / cover;
 		color: #fff;
 		@include breakpoint(tablet) {
 			height: 250px;
 		}
 	}
 
-	div.looking-glass section.intro {
+	.looking-glass .intro {
 		text-align: center;
 		padding: 5em 1em;
 		@include breakpoint(tablet) {
@@ -23,11 +23,11 @@ article#home {
 		}
 	}
 
-	div.looking-glass section.intro div {
+	.looking-glass .intro div {
 		padding: 1.5em 0;
 	}
 
-	div.looking-glass img.avatar {
+	.looking-glass .avatar {
 		width: 150px;
 		border-radius: 50%;
 		@include breakpoint(tablet) {
@@ -35,19 +35,77 @@ article#home {
 		}
 	}
 
-	 span.hightlight {
+	 .hightlight {
 	 	color: $secondaryColor;
 	 }
 
-	 div.project-container {
-	 	max-width: 600px;
+	 .project-container {
+        max-width: 500px;
 	 	margin: 0 auto;
-
+         &:last-child {
+             padding-bottom: 2em;
+         }
 	 }
 
-	 div.row {
-	 	padding: 3em 1em;
+    .project-container + .project-container {
+        border-top: 1px solid #d4d4d4;
+    }
+
+    .project-container .row img {
+        border-radius: 3px;
+    }
+
+	 .row {
+         margin: 1em 0;
+         position: relative;
+         overflow: hidden;
+         @include breakpoint(tablet) {
+             margin: 0 0 1em 0;
+         }
 	 }
+
+
+    .row .showcase-overlay {
+        height: 0;
+        opacity: 0;
+        width: 100%;
+        position: absolute;
+        bottom:0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, .8);
+        color: #fff;
+        text-align: center;
+        transition: .3s ease-in-out;
+        text-align: center;
+        @include breakpoint(tablet) {
+            height: 75px;
+            opacity: 1;
+            position: static;
+            background: transparent none repeat scroll 0% 0%;
+            color: initial;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .row:hover .showcase-overlay {
+        height: 125px;
+        opacity: 1;
+        @include breakpoint(tablet) {
+            height: 75px;
+        }
+    }
+
+    .row .showcase-overlay h3 {
+        font-size: 1.5em;
+        margin: 25px 0 5px;
+        font-weight: bold;
+        @include breakpoint(tablet) {
+            margin: 0;
+        }
+    }
 
 
 }

@@ -7,6 +7,7 @@
 header#site-header {
 	padding: 0;
 	position: relative;
+    border-bottom: 1px solid #d4d4d4;
 
 	nav#site-nav {
 		font-size: 1.25em;
@@ -71,10 +72,11 @@ header#site-header {
 	}
 }
 
-header {
-	padding: 2em 0;
-	border-bottom: 1px solid #d4d4d4;
-	@include breakpoint(mobile-phone) {
-		padding: 1em 0;
-	}
-}
+#page-header {
+    padding: 2em 0;
+    font-weight: bold;
+    border-bottom: 1px solid #d4d4d4;
+    @include breakpoint(mobile-phone) {
+        padding: 1em 0;
+    }
+ }

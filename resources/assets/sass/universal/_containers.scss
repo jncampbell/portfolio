@@ -4,9 +4,14 @@
 |
 |*/
 
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+}
+
 div.wrap {
 	background-color: $primaryColor;
-	height: 100%;
 	width: 100%;
 }
 

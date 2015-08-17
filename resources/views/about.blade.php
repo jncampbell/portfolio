@@ -9,7 +9,7 @@
         <img src='images/homeslider.jpg'>
     </div>
     <div class='container-1100'>
-        <header class='centered section-header'><h1>about me</h1></header>
+        <header id="page-header" class='centered'><h1>about me</h1></header>
         <section class='about-section'>
             <p>
                 Hi! I'm James Campbell, a web developer from Brooklyn, NY. I kind of wandered into

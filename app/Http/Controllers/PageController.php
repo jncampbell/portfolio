@@ -38,19 +38,19 @@ class PageController extends Controller {
             'originalMessage'      => $request->get('message')
         );
 
-//        //Send User's Message as Email
-//        Mail::send('emails.contact_email', ['body' => $request->get('message')], function ($message) use ($request)
-//        {
-//            $message->from($request->get('email'));
-//            $message->to(env('MAIL_MYADDRESS'))->subject($request->get('subject'));
-//        });
-//
-//        //Send User an Email Confirmation that their message was sent
-//        Mail::send('emails.email_confirmation', $email_message, function ($message) use ($request)
-//        {
-//            $message->from(env('MAIL_MYADDRESS'));
-//            $message->to(env('MAIL_MYADDRESS'))->subject('Email sent confirmation!');
-//        });
+        //Send User's Message as Email
+        Mail::send('emails.contact_email', ['body' => $request->get('message')], function ($message) use ($request)
+        {
+            $message->from($request->get('email'));
+            $message->to(env('MAIL_MYADDRESS'))->subject($request->get('subject'));
+        });
+
+        //Send User an Email Confirmation that their message was sent
+        Mail::send('emails.email_confirmation', $email_message, function ($message) use ($request)
+        {
+            $message->from(env('MAIL_MYADDRESS'));
+            $message->to($request->get('email'))->subject('Email sent confirmation!');
+        });
 
         return redirect()->back()->with('success', 'Your message was successfully sent!');
     }
@@ -58,5 +58,15 @@ class PageController extends Controller {
     public function projects()
     {
         return view('projects');
+    }
+
+    public function clubApp()
+    {
+        return view('projects.clubApp');
+    }
+
+    public function wheresmyspaceship()
+    {
+        return view('projects.wheresmyspaceship');
     }
 }

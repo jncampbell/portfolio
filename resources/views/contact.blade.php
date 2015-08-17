@@ -7,7 +7,9 @@
     <div id='contact-banner'>
         <img src='images/homeslider.jpg'>
     </div>
-    <header class='centered section-header'><h1>contact me</h1></header>
+    <header id="page-header" class="centered">
+        <h1>contact me</h1>
+    </header>
 
     <div class='section-broadcast'>
         @if (Session::has('success'))

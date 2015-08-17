@@ -4,14 +4,14 @@
     <title>@yield('title')</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width' initial-scale='1' maximum-scale='1' user-scalable='no'>
-    <link rel='stylesheet' href='css/app.css'>
+    <link rel='stylesheet' href='/css/app.css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 </head>
 <body>
 <div class='wrap'>
-    <header id='site-header' role='banner'>
+    <header id='site-header' class="major-section-header" role='banner'>
         <div class='container-1100'>
             <nav id='site-nav' role='navigation'>
                 <div id='site-logo'>
@@ -23,7 +23,7 @@
                     <li><a href='{{ URL::to("contact") }}'>contact</a></li>
                 </ul>
                 <div id='mobile-nav-toggle'>
-                    <img src='images/mobile-menu3.png'>
+                    <img src='/images/mobile-menu.png'>
                 </div>
             </nav>
             <nav id='mobile-nav' role='navigation'>
@@ -46,5 +46,5 @@
     </footer>
 </div>
 </body>
-<script src="javascript/scripts.js"></script>
+<script src="/javascript/scripts.js"></script>
 </html>

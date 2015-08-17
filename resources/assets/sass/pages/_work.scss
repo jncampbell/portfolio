@@ -1,0 +1,56 @@
+article#projects {
+    .project-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 50px 20px;
+    }
+
+    .project-container + .project-container {
+        border-top: 1px solid #d4d4d4;
+    }
+
+    .screenshot {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .summary {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .summary p {
+        padding: 15px 0;
+    }
+}
+
+article#project {
+    padding: 30px 5px;
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    #page-wrap {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 1.15em;
+    }
+
+    .showcase {
+        padding: 0 10px;
+    }
+
+    #work-summary {
+        padding: 0 10px;
+        margin: 40px 0;
+    }
+
+   .screenshot {
+       padding: 60px 10px;
+       border-top: 1px solid #d4d4d4;
+   }
+}
