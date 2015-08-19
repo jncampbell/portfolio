@@ -38,46 +38,57 @@ article#home {
 	 .hightlight {
 	 	color: $secondaryColor;
 	 }
+}
 
-	 .project-container {
-        max-width: 500px;
-	 	margin: 0 auto;
-         &:last-child {
-             padding-bottom: 2em;
-         }
-	 }
+%overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .8);
+    text-align: center;
+    color: #fff;
+    width: 100%;
 
-    .project-container + .project-container {
-        border-top: 1px solid #d4d4d4;
+    h3 {
+        font-size: 1.5em;
+        margin: 25px 0 5px;
+        font-weight: bold;
+        @include breakpoint(tablet) {
+            margin: 0;
+        }
+    }
+}
+
+
+.project-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px 0;
+
+    &:last-child {
+        padding-bottom: 2em;
     }
 
-    .project-container .row img {
+    .row {
+        margin: 1em 0;
+        position: relative;
+        overflow: hidden;
+        @include breakpoint(tablet) {
+            margin: 0 0 1em 0;
+        }
+    }
+
+    .row img {
         border-radius: 3px;
     }
 
-	 .row {
-         margin: 1em 0;
-         position: relative;
-         overflow: hidden;
-         @include breakpoint(tablet) {
-             margin: 0 0 1em 0;
-         }
-	 }
+    .showcase-overlay {
+        @extend %overlay;
 
-
-    .row .showcase-overlay {
         height: 0;
         opacity: 0;
-        width: 100%;
-        position: absolute;
-        bottom:0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, .8);
-        color: #fff;
-        text-align: center;
         transition: .3s ease-in-out;
-        text-align: center;
         @include breakpoint(tablet) {
             height: 75px;
             opacity: 1;
@@ -88,6 +99,7 @@ article#home {
             flex-direction: column;
             justify-content: center;
         }
+
     }
 
     .row:hover .showcase-overlay {
@@ -98,14 +110,37 @@ article#home {
         }
     }
 
-    .row .showcase-overlay h3 {
-        font-size: 1.5em;
-        margin: 25px 0 5px;
-        font-weight: bold;
-        @include breakpoint(tablet) {
-            margin: 0;
+    .coming-soon-overlay {
+        @extend %overlay;
+        opacity: .85;
+        top: 0;
+        background: rgba(0, 0, 0, .98);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+
+        h3, p {
+            opacity: .3;
+        }
+
+        h3 {
+            margin-top: 100px;
+            @include breakpoint(phablet) {
+                margin-top: 50px;
+            }
         }
     }
 
+    .coming-soon-notice {
+        font-size: 2.5em;
+    }
 
 }
+
+
+
+
+
+
+
+

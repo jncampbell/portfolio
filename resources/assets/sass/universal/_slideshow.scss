@@ -1,0 +1,51 @@
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators li {
+    background: #d4d4d4;
+    width: 12px;
+    height: 12px;
+}
+
+.carousel-indicators li.active {
+    background: rgb(0, 181, 181);
+}
+
+.sr-only {
+    display: none;
+}
+
+.left-arrow::before,
+.right-arrow::before {
+    content: '';
+    height: 1.5em;
+    width: 1.5em;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    @include breakpoint(tablet) {
+        height: 1em;
+        width: 1em;
+    }
+}
+
+.left-arrow::before {
+    background: url('/images/left-arrow-icon.png') no-repeat scroll;
+    left: 1em;
+    background-size: 100%;
+    @include breakpoint(tablet) {
+        left: .5em;
+    }
+}
+
+.right-arrow::before {
+    background: url('/images/right-arrow-icon.png') no-repeat scroll;
+    right: 1em;
+    background-size: 100%;
+    @include breakpoint(tablet) {
+        right: .5em;
+    }
+}

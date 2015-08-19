@@ -3,10 +3,7 @@
  */
 (function(portfolio, $, undefined) {
 
-    /*
-     * Toggle the mobile nav menu
-     *
-     */
+    //Toggle the mobile nav menu
     $(function () {
 
         var site_header = $(document.getElementById('site-header'));
@@ -26,7 +23,16 @@
                 mobile_nav.hide();
             }
         });
-
     });
+
+    //Activate the left and right carousel arrows
+    $('.carousel-control.left').on('click', function() {
+        $('#carousel').carousel('prev');
+    });
+
+    $('.carousel-control.right').on('click', function() {
+        $('#carousel').carousel('next');
+    });
+
 
 }(window.portfolio = window.portfolio || {}, jQuery));

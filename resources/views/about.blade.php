@@ -6,10 +6,12 @@
 
 <article id='about'>
     <div id='about-banner'>
-        <img src='images/homeslider.jpg'>
+        <img src='images/about-code.jpg'>
     </div>
-    <div class='container-1100'>
-        <header id="page-header" class='centered'><h1>about me</h1></header>
+    <div class='container-90'>
+        <header id="page-header" class='centered'>
+            <h1>about me</h1>
+        </header>
         <section class='about-section'>
             <p>
                 Hi! I'm James Campbell, a web developer from Brooklyn, NY. I kind of wandered into
@@ -24,10 +26,21 @@
                 rating.
             </p>
             <p>
-                I love creating elegant, user-friendly websites. I'm comfortable with HTML, CSS,
-                Javascript - including jQuery and AJAX, PHP, and Laravel. There's never a
-                period when I'm not learning something new, which is one of the things
-                I love about coding and web development.
+                I love creating elegant, user-friendly websites. I'm comfortable using HTML, CSS,
+                Javascript (+ jQuery and AJAX), PHP, and Laravel. Learning is always an ongoing process for me. Right now
+                I'm learning design patterns and some of Laravel's advanced features.
+            </p>
+        </section>
+        <section class="about-section">
+            <header class="centered">
+                <h2>About this site</h2>
+            </header>
+            <p>
+                This site was built with Laravel, jQuery, HTML5, CSS and a little bit of Bootstrap.
+                I downloaded the mockups from <a href="http://pixeden.com">pixeden.com</a> and
+                the icons from <a href="http://flaticon.com">flaticon.com</a>, which I
+                customized with photoshop. Laravel comes bundled with SwiftMailer so,
+                that's what I used to run my contact form.
             </p>
         </section>
     </div>

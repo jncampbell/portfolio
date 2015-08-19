@@ -18,7 +18,7 @@
             </div>
         </section>
     </div>
-    <section class='container-1100'>
+    <section class='container-90'>
         <header id="page-header" class='centered'>
             <h2>Recent Projects</h2>
         </header>
@@ -35,16 +35,16 @@
             </a>
         </div>
         <div class='project-container'>
-            <a href="{{ URL::to('projects/wheresmyspaceship') }}">
-                <div class='row'>
-                    <div class="showcase-overlay">
-                        <h3>WheresMySpaceship</h3>
-                        <p>Personal Blog</p>
-                    </div>
-                    <img src='images/wheresmyspaceship-showcase-phone.jpg'>
-
+            <div class='row'>
+                <div class="coming-soon-overlay">
+                    <h3>WheresMySpaceship</h3>
+                    <p>Personal Blog</p>
+                    <span class="coming-soon-notice">
+                        Coming Soon
+                    </span>
                 </div>
-            </a>
+                <img src='images/wheresmyspaceship-showcase-phone.jpg'>
+            </div>
         </div>
     </section>
 </article>
