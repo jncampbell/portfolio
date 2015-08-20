@@ -6,7 +6,7 @@
     <meta name='viewport' content='width=device-width' initial-scale='1' maximum-scale='1' user-scalable='no'>
     <meta name="description" content="Web developer from Brooklyn, NY.">
     <meta name="keywords" content="web developer, web development, new york web developer, php developer, laravel developer">
-    <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}">
+    <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="images/x-icon">
     <link rel='stylesheet' href='/css/app.css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

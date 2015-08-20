@@ -1,5 +1,5 @@
 var elixir = require('laravel-elixir');
-
+var autoprefixer = require('gulp-autoprefixer');
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -17,4 +17,5 @@ elixir(function(mix) {
     mix.scripts([
         'app.js'
     ], 'public/javascript/scripts.js');
+
 });

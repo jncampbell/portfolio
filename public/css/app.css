@@ -1390,26 +1390,46 @@ article#home .looking-glass {
   @media only screen and (max-width: 960px) {
     article#home .looking-glass {
       height: 250px; } }
+  article#home .looking-glass .avatar {
+    width: 150px;
+    border-radius: 50%; }
+    @media only screen and (max-width: 960px) {
+      article#home .looking-glass .avatar {
+        width: 90px; } }
 
-article#home .looking-glass .intro {
+article#home .intro {
   text-align: center;
-  padding: 5em 1em; }
+  padding: 5em 1em;
+  -webkit-animation: fadein 900ms;
+  animation: fadein 900ms; }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.2, 0.2);
+    transform: scale(0.2, 0.2); }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); } }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.2, 0.2);
+    transform: scale(0.2, 0.2); }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); } }
+  article#home .intro div {
+    padding: 1.5em 0; }
   @media only screen and (max-width: 960px) {
-    article#home .looking-glass .intro {
+    article#home .intro {
       padding-top: 2em;
       font-size: 80%; } }
 
-article#home .looking-glass .intro div {
-  padding: 1.5em 0; }
-
-article#home .looking-glass .avatar {
-  width: 150px;
-  border-radius: 50%; }
-  @media only screen and (max-width: 960px) {
-    article#home .looking-glass .avatar {
-      width: 90px; } }
-
-article#home .hightlight {
+article#home .looking-glass .hightlight {
   color: #00b5b5; }
 
 .project-container .showcase-overlay, .project-container .coming-soon-overlay {

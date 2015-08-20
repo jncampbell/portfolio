@@ -12,30 +12,43 @@ article#home {
 		@include breakpoint(tablet) {
 			height: 250px;
 		}
-	}
 
-	.looking-glass .intro {
+        .avatar {
+             width: 150px;
+             border-radius: 50%;
+             @include breakpoint(tablet) {
+                 width: 90px;
+             }
+         }
+
+    }
+
+	.intro {
 		text-align: center;
 		padding: 5em 1em;
+        animation: fadein 900ms;
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+                transform: scale(.2, .2);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1, 1);
+            }
+        }
+
+        div {
+            padding: 1.5em 0;
+        }
 		@include breakpoint(tablet) {
 			padding-top: 2em;
 			font-size: 80%;
 		}
 	}
 
-	.looking-glass .intro div {
-		padding: 1.5em 0;
-	}
-
-	.looking-glass .avatar {
-		width: 150px;
-		border-radius: 50%;
-		@include breakpoint(tablet) {
-			width: 90px;
-		}
-	}
-
-	 .hightlight {
+	.looking-glass .hightlight {
 	 	color: $secondaryColor;
 	 }
 }
