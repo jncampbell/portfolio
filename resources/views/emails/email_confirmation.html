@@ -17,7 +17,7 @@
         font-size: 24px;
         max-width: 600px;
         margin: 0 auto;
-        padding: 10px 0;
+        padding: 20px 0;
         background: #fff;
 
     }
@@ -61,11 +61,6 @@
         margin: 15px;
     }
 
-    a {
-        color: rgb(0, 181, 181);
-        text-decoration: none;;
-    }
-
     ul {
         width: 100%;
         list-style-type: none;
@@ -74,9 +69,21 @@
         margin: 0;
     }
     li {
-        padding: 10px 0;
         border-top: 2px solid #eee;
     }
+
+    a {
+        color: rgb(0, 181, 181);
+        text-decoration: none;;
+    }
+
+    .email-footer li a {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        padding: 20px 0;
+    }
+
 </style>
 <body>
 <div class="email-background">
@@ -101,8 +108,8 @@
     </div>
     <div class="email-footer">
         <ul>
-            <li><a href="">Visit Site</a></li>
-            <li><a href="">I did not send this message</a></li>
+            <li><a href="http://jncampbell.com">Visit Site</a></li>
+            <li><a href="http://jncampbell.com/remove_email/{{ $originalSender }}">I did not send this message</a></li>
         </ul>
     </div>
 </div>

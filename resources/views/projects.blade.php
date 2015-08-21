@@ -2,8 +2,9 @@
 @section('title')
     James Campbell | Projects
 @stop
+@include('layouts.header')
 @section('content')
-<article id='projects'>
+<article id='project'>
     <header id="page-header" class='centered'>
         <h1>Projects</h1>
     </header>
@@ -34,4 +35,5 @@
         </section>
     </section>
 </article>
+@include('layouts.footer')
 @stop

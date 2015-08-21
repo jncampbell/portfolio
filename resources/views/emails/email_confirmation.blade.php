@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="email-background" style="max-width: 600px; background: #eee; margin: 0 auto; padding: 10px;">
-    <div class="pre-header" style="text-align: center; font-size: 24px; max-width: 600px; background: #fff; margin: 0 auto; padding: 10px 0;" align="center">
+    <div class="pre-header" style="text-align: center; font-size: 24px; max-width: 600px; background: #fff; margin: 0 auto; padding: 20px 0;" align="center">
         <a href="http://www.jncampbell.com" style="color: rgb(0, 181, 181); text-decoration: none;">jncampbell.com</a>
     </div>
     <div class="email-container" style="max-width: 600px; font-size: 16px; overflow: hidden; border-top-color: #eee; border-top-width: 2px; border-top-style: solid; background: #fff; margin: 0 auto;">
@@ -29,8 +29,8 @@
     </div>
     <div class="email-footer" style="max-width: 600px; overflow: hidden; background: #fff; margin: 0 auto;">
         <ul style="width: 100%; text-align: center; margin: 0; padding: 0; list-style: none;">
-            <li style="border-top-width: 2px; border-top-color: #eee; border-top-style: solid; padding: 10px 0;"><a href="" style="color: rgb(0, 181, 181); text-decoration: none;">Visit Site</a></li>
-            <li style="border-top-width: 2px; border-top-color: #eee; border-top-style: solid; padding: 10px 0;"><a href="" style="color: rgb(0, 181, 181); text-decoration: none;">I did not send this message</a></li>
+            <li style="border-top-width: 2px; border-top-color: #eee; border-top-style: solid;"><a href="http://jncampbell.com" style="color: rgb(0, 181, 181); text-decoration: none; display: inline-block; height: 100%; width: 100%; padding: 20px 0;">Visit Site</a></li>
+            <li style="border-top-width: 2px; border-top-color: #eee; border-top-style: solid;"><a href="http://jncampbell.com/remove_email/%7B%7B%20%24originalSender%20%7D%7D" style="color: rgb(0, 181, 181); text-decoration: none; display: inline-block; height: 100%; width: 100%; padding: 20px 0;">I did not send this message</a></li>
         </ul>
     </div>
 </div>

@@ -2,6 +2,7 @@
 @section('title')
     James Campbell | Contact
 @stop
+@include('layouts.header')
 @section('content')
 <article id='contact'>
     <div id='contact-banner'>
@@ -48,4 +49,5 @@
         <button type='submit'>Send Message</button>
     </form>
 </article>
+@include('layouts.footer')
 @stop

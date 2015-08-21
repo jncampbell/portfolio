@@ -3,6 +3,11 @@
  */
 (function(portfolio, $, undefined) {
 
+    //Doesn't work in Safari
+    $('#contact-form').on('submit', function(e) {
+       $('#contact').append('<div class="loader"></div>');
+    });
+
     //Toggle the mobile nav menu
     $(function () {
 
@@ -33,10 +38,6 @@
     $('.carousel-control.right').on('click', function() {
         $('#carousel').carousel('next');
     });
-
-
-
-    //Parallex
 
 
 }(window.portfolio = window.portfolio || {}, jQuery));

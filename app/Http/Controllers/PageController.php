@@ -38,7 +38,6 @@ class PageController extends Controller {
             'originalMessage'      => $request->get('message')
         );
 
-        //Send User's Message as Email
         Mail::send('emails.contact_email', ['body' => $request->get('message')], function ($message) use ($request)
         {
             $message->from($request->get('email'));
@@ -69,4 +68,5 @@ class PageController extends Controller {
     {
         return view('projects.wheresmyspaceship');
     }
+
 }

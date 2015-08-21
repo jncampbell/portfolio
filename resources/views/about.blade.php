@@ -2,6 +2,7 @@
 @section('title')
     James Campbell | About Me
 @stop
+@include('layouts.header')
 @section('content')
 
 <article id='about'>
@@ -45,5 +46,5 @@
         </section>
     </div>
 </article>
-
+@include('layouts.footer')
 @stop

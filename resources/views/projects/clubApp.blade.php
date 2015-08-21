@@ -2,13 +2,14 @@
 @section('title')
     Club App | James Campbell | Web Developer
 @stop
+@include('layouts.header')
 @section('content')
 
 <article id="project">
-    <header class="centered">
+    <header id="page-header" class="centered">
         <h1> Club App </h1>
     </header>
-    <article id="page-wrap">
+    <div id="page-wrap">
 
         <section class="showcase">
             <img alt="club-app-device-showcase" src="/images/club-app-device-showcase.jpg">
@@ -46,8 +47,8 @@
                 ['image_2' => '/images/event-show-code.jpg', 'alt_2' => 'event-show-code']
             )
         </section>
-    </article>
+    </div>
 
 </article>
-
+@include('layouts.footer')
 @stop

@@ -4,48 +4,45 @@
 @stop
 @section('content')
 <article id='home'>
-    <div class='looking-glass'>
         <section class='intro'>
             <img class='avatar' src='images/avatar.jpg'>
-            <div>
-                <h1>
-                    James Campbell
-                    <br>
-                    <span class='hightlight'>Web Developer</span>
-                    <br>
-                    Brooklyn, NY
-                </h1>
-            </div>
+            <h1>
+                <div>
+                    James Campbell | <span class='hightlight'>Web Developer</span>
+                </div>
+            </h1>
         </section>
-    </div>
-    <section class='container-90'>
-        <header id="page-header" class='centered'>
-            <h2>Recent Projects</h2>
-        </header>
-        <div class='project-container'>
-            <a href="{{ URL::to('projects/club-app') }}">
-                <div class='row'>
-                    <div class="showcase-overlay">
-                        <h3>Nightlife</h3>
-                        <div class="separator"></div>
-                        <p>Web Application</p>
-                    </div>
-                    <img src='images/club-app-showcase-phone.jpg'>
-                </div>
-            </a>
-        </div>
-        <div class='project-container'>
-            <div class='row'>
-                <div class="coming-soon-overlay">
-                    <h3>WheresMySpaceship</h3>
-                    <p>Personal Blog</p>
-                    <span class="coming-soon-notice">
-                        Coming Soon
-                    </span>
-                </div>
-                <img src='images/wheresmyspaceship-showcase-phone.jpg'>
+    <nav id="main-nav">
+        <ul>
+            <div class="row">
+                <li>
+                    <a href="{{ URL::to('/projects') }}">
+                        <img src="/images/work-icon.png" alt="work-icon">
+                        <p>Work</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ URL::to('/images/resume.pdf') }}">
+                        <img src="/images/resume-icon.png" alt="resume-icon">
+                        <p>Resume</p>
+                    </a>
+                </li>
             </div>
-        </div>
-    </section>
+            <div class="row">
+                <li>
+                    <a href="{{ URL::to('/about') }}">
+                        <img src="/images/about-icon.png" alt="about-icon">
+                        <p>About</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ URL::to('/contact') }}">
+                        <img src="/images/contact-icon.png" alt="work-icon">
+                        <p>Contact</p>
+                    </a>
+                </li>
+            </div>
+        </uL>
+    </nav>
 </article>
 @stop
