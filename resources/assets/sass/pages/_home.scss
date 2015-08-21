@@ -12,9 +12,12 @@ article#home {
 
 
     .intro {
-        margin-top: -10em;
+        margin-top: 0em;
         text-align: center;
         animation: fadein 900ms;
+        @include breakpoint(phablet) {
+            margin-top: 4em;
+        }
         @keyframes fadein {
             from {
                 opacity: 0;
@@ -56,6 +59,9 @@ article#home {
     #main-nav ul {
         margin-top: 50px;
         animation: slidein 2s;
+        @include breakpoint(phablet) {
+            margin-top: 25px;
+        }
 
         @keyframes slidein {
             0% {
@@ -79,7 +85,9 @@ article#home {
         text-align: center;
         width: 80px;
         transition: all .2s ease;
-
+        @include breakpoint(phablet) {
+            width: 60px;
+        }
         + li {
             margin-left: 90px;
         }
