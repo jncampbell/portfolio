@@ -87,41 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_typography.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_typography.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/assets/sass/universal/_typography.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2033">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/assets/sass/universal/_header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.89432704" vertical-offset="754" max-vertical-offset="1729">
-              <caret line="82" column="7" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/footer.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="152">
-              <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_mixins.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/sass/helpers/_mixins.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
-              <caret line="14" column="129" selection-start-line="14" selection-start-column="129" selection-end-line="14" selection-end-column="129" />
+            <state vertical-scroll-proportion="0.74638486" vertical-offset="1134" max-vertical-offset="2166">
+              <caret line="95" column="8" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -176,8 +146,8 @@
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/js/app.js" />
         <option value="$PROJECT_DIR$/resources/assets/sass/pages/_home.scss" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/universal/_typography.scss" />
         <option value="$PROJECT_DIR$/resources/assets/sass/universal/_header.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/universal/_typography.scss" />
       </list>
     </option>
   </component>
@@ -745,22 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/helpers/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
-          <caret line="14" column="129" selection-start-line="14" selection-start-column="129" selection-end-line="14" selection-end-column="129" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="152">
-          <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/universal/_containers.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
@@ -801,18 +755,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/universal/_typography.scss">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2033">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.021134594" vertical-offset="0" max-vertical-offset="899">
+          <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/helpers/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2958843" vertical-offset="0" max-vertical-offset="899">
+          <caret line="14" column="129" selection-start-line="14" selection-start-column="129" selection-end-line="14" selection-end-column="129" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/universal/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.89432704" vertical-offset="754" max-vertical-offset="1729">
-          <caret line="82" column="7" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.7886541" vertical-offset="773" max-vertical-offset="1672">
+          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/universal/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74638486" vertical-offset="1134" max-vertical-offset="2166">
+          <caret line="95" column="8" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="29" />
           <folding />
         </state>
       </provider>
