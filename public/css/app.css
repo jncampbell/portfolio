@@ -1480,9 +1480,9 @@ article#home {
         width: 60px; } }
     article#home #main-nav li + li {
       margin-left: 90px; }
-    article#home #main-nav li:hover {
-      -webkit-transform: scale(1.25, 1.25);
-      transform: scale(1.25, 1.25); }
+  article#home .hover-effect {
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25); }
   article#home #main-nav ul a:hover {
     color: #000; }
 

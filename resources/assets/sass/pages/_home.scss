@@ -95,9 +95,10 @@ article#home {
             margin-left: 90px;
         }
 
-        &:hover {
-            transform: scale(1.25, 1.25);
-        }
+    }
+
+    .hover-effect {
+        transform: scale(1.25, 1.25);
     }
 
     #main-nav ul a {
