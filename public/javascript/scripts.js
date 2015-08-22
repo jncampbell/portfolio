@@ -3,16 +3,28 @@
  */
 (function(portfolio, $, undefined) {
 
+    function isTouchDevice() {
+        return (('ontouchstart' in window)
+            || (navigator.MaxTouchPoints > 0)
+            || (navigator.msMaxTouchPoints > 0));
+    }
+
+    (function() {
+        if (!isTouchDevice()) {
+            $('#main-nav').on('mouseenter touchstart', 'li', function(){
+                $(this).addClass('hover-effect');
+            }).on('mouseout touchend', 'li', function() {
+                $(this).removeClass('hover-effect');
+            });
+        }
+    })();
+    
     //Doesn't work in Safari
     $('#contact-form').on('submit', function(e) {
        $('#contact').append('<div class="loader"></div>');
     });
 
-    $('#main-nav').on('mouseenter touchstart', 'li', function(){
-        $(this).addClass('hover-effect');
-    }).on('mouseout touchend', 'li', function() {
-       $(this).removeClass('hover-effect');
-    });
+
 
     //Toggle the mobile nav menu
     $(function () {
