@@ -15,13 +15,13 @@
     <nav id="main-nav">
         <ul>
             <div class="row">
-                <li onclick="">
+                <li>
                     <a href="{{ URL::to('/projects') }}">
                         <img src="/images/work-icon.png" alt="work-icon">
                         <p>Work</p>
                     </a>
                 </li>
-                <li onclick="">
+                <li>
                     <a href="{{ URL::to('/images/resume.pdf') }}">
                         <img src="/images/resume-icon.png" alt="resume-icon">
                         <p>Resume</p>
