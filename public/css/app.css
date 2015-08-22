@@ -1059,7 +1059,7 @@ body {
   font: 100% 'Open Sans', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 600; }
 
 h1,
 h2,
@@ -1247,7 +1247,7 @@ header#site-header {
 
 #page-header {
   padding: 2em 0;
-  font-weight: bold;
+  font-weight: 600;
   border-bottom: 1px solid #d4d4d4; }
   @media only screen and (max-width: 600px) {
     #page-header {

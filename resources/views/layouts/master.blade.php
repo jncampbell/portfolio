@@ -8,7 +8,7 @@
     <meta name="keywords" content="web developer, web development, new york web developer, php developer, laravel developer">
     <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="images/x-icon">
     <link rel='stylesheet' href='/css/app.css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
