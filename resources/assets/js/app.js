@@ -8,6 +8,11 @@
        $('#contact').append('<div class="loader"></div>');
     });
 
+    $('#main-nav').on('touchstart', 'li', function(){
+       $(this).click();
+    });
+
+
     //Toggle the mobile nav menu
     $(function () {
 
