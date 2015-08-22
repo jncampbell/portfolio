@@ -1388,6 +1388,9 @@ article#home {
     @media only screen and (max-width: 480px) {
       article#home .intro {
         margin-top: 25px; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+      article#home .intro {
+        margin-top: 20px; } }
 
 @-webkit-keyframes fadein {
   from {

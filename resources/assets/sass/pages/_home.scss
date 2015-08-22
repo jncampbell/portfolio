@@ -13,6 +13,10 @@ article#home {
         @include breakpoint(mobile-phone) {
             margin-top: 25px;
         }
+
+        @include breakpoint(iphone5-landscape) {
+            margin-top: 20px;
+        }
         @keyframes fadein {
             from {
                 opacity: 0;
