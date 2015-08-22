@@ -5,18 +5,13 @@
 |*/
 article#home {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
 
     .intro {
-        margin-top: 0em;
+        margin-top: 150px;
         text-align: center;
         animation: fadein 900ms;
-        @include breakpoint(phablet) {
-            margin-top: 4em;
+        @include breakpoint(mobile-phone) {
+            margin-top: 25px;
         }
         @keyframes fadein {
             from {
@@ -37,8 +32,11 @@ article#home {
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 1.25em;
         margin: 1em 0;
+        @include breakpoint(mobile-phone) {
+
+        }
     }
 
     .row {
@@ -59,7 +57,8 @@ article#home {
     #main-nav ul {
         margin-top: 50px;
         animation: slidein 2s;
-        @include breakpoint(phablet) {
+        text-align: center;
+        @include breakpoint(mobile-phone) {
             margin-top: 25px;
         }
 
@@ -85,7 +84,7 @@ article#home {
         text-align: center;
         width: 80px;
         transition: all .2s ease;
-        @include breakpoint(phablet) {
+        @include breakpoint(mobile-phone) {
             width: 60px;
         }
         + li {
