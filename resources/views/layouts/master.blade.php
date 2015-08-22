@@ -3,7 +3,7 @@
 <head>
     <title>@yield('title')</title>
     <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width' initial-scale='1' maximum-scale='1' user-scalable='no'>
+    <meta name='viewport' content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
     <meta name="description" content="Web developer from Brooklyn, NY.">
     <meta name="keywords" content="web developer, web development, new york web developer, php developer, laravel developer">
     <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="images/x-icon">
