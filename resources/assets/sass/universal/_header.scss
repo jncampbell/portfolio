@@ -79,4 +79,8 @@ header#site-header {
     @include breakpoint(mobile-phone) {
         padding: 1em 0;
     }
+    @include breakpoint(iphone5-landscape) {
+        letter-spacing: -1px;
+    }
+
  }
