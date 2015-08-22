@@ -92,7 +92,7 @@ p.light {
 
 header {
     @include breakpoint(phablet) {
-        letter-spacing: -2px;
+        -webkit-letter-spacing: -2px;
     }
 
 }

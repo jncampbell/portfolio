@@ -1119,7 +1119,7 @@ p.light {
 
 @media only screen and (max-width: 600px) {
   header {
-    letter-spacing: -2px; } }
+    -webkit-letter-spacing: -2px; } }
 
 /*					Containers
 |============================================
