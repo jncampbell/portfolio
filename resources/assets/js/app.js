@@ -8,10 +8,11 @@
        $('#contact').append('<div class="loader"></div>');
     });
 
-    $('#main-nav').on('touchstart', 'li', function(){
-       $(this).click();
+    $('#main-nav').on('mouseenter touchstart', 'li', function(){
+        $(this).addClass('hover-effect');
+    }).on('mouseout touchend', 'li', function() {
+       $(this).removeClass('hover-effect');
     });
-
 
     //Toggle the mobile nav menu
     $(function () {
