@@ -1061,6 +1061,19 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600; }
 
+h1 {
+  font-size: 1.75em;
+  line-height: 1.5em; }
+
+h2 {
+  font-size: 1.50em; }
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.25em; }
+
 h1,
 h2,
 h3,
@@ -1073,21 +1086,6 @@ nav#mobile-nav ul {
 
 div#site-logo {
   text-transform: uppercase; }
-
-h1 {
-  font-size: 1.75em;
-  line-height: 1.5em; }
-
-h2 {
-  font-size: 1.50em;
-  font-weight: bold; }
-
-h3,
-h4,
-h5,
-h6 {
-  font-size: 1.25em;
-  font-weight: bold; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
   p {
