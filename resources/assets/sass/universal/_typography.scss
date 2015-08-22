@@ -11,6 +11,12 @@ body {
 	}
 }
 
+body p {
+    @include breakpoint(iphone5-landscape) {
+        font-size: .7em;
+    }
+}
+
 h1,
 h2,
 h3,
