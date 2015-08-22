@@ -1058,9 +1058,8 @@ table {
 body {
   font: 100% 'Open Sans', sans-serif; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-  h1, h2, h3, h4, h5, h6 {
-    letter-spacing: 0px; } }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
 
 h1,
 h2,
@@ -1116,10 +1115,6 @@ p.light {
 
 .font-small {
   font-size: .9em; }
-
-@media only screen and (max-width: 600px) {
-  header {
-    -webkit-letter-spacing: -2px; } }
 
 /*					Containers
 |============================================
