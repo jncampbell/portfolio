@@ -18,7 +18,7 @@
             });
         }
     })();
-    
+
     //Doesn't work in Safari
     $('#contact-form').on('submit', function(e) {
        $('#contact').append('<div class="loader"></div>');
