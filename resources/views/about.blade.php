@@ -38,10 +38,10 @@
             </header>
             <p>
                 This site was built with Laravel, jQuery, HTML5, CSS and a little bit of Bootstrap.
-                I downloaded the mockups from <a href="http://pixeden.com">pixeden.com</a> and
-                the icons from <a href="http://flaticon.com">flaticon.com</a>, which I
-                customized with photoshop. Laravel comes bundled with SwiftMailer so,
-                that's what I used to run my contact form.
+                The mockups and icons were downloaded from <a href="http://pixeden.com">Pixeden</a> and
+                <a href="http://flaticon.com">Flaticon</a>, respectively and I customized them both with photoshop.
+                Laravel comes bundled with SwiftMailer, so I hooked that up with <a href="https://www.mandrill.com/">Mandrill</a>
+                to power my contact form. All photos were taken by me.
             </p>
         </section>
     </div>
