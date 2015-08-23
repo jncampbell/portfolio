@@ -1,15 +1,15 @@
 /*					Header
 |============================================
 |
-|
+|w
 |*/
 
-header#site-header {
+#site-header {
 	padding: 0;
 	position: relative;
     border-bottom: 1px solid #d4d4d4;
 
-	nav#site-nav {
+	#site-nav {
 		font-size: 1.25em;
 		padding: 1.5em 0;
 		@include breakpoint(tablet) {
@@ -17,18 +17,20 @@ header#site-header {
 		}
 	}
 
-	nav#site-nav div#site-logo {
+
+	#site-nav #site-logo {
 		display: inline-block;
+        float: left;
 	}
 
-	nav#site-nav ul {
+	#site-nav ul {
 		float: right;
 		@include breakpoint(tablet) {
 			display: none;
 		}
 	}
 
-	div#mobile-nav-toggle {
+	#mobile-nav-toggle {
 		display: none;
 		margin-top: -10px;
 		height: 37.5px;
@@ -40,34 +42,36 @@ header#site-header {
 		}
 	}
 
-	nav#site-nav li {
+
+	#site-nav li {
 		display: inline-block;
 		padding: 0 10px;
 	}
 
-	nav#mobile-nav {
-		display: none;
+	#mobile-nav {
+        display: none;
 		font-size: 1.25em;
 		background: #fff;
 		width: 100%;
+        -webkit-transform: translateZ(0);
 	}
 
-	nav#mobile-nav ul {
+	#mobile-nav ul {
 		width: 100%;
 	}
 
-	nav#mobile-nav li {
+	#mobile-nav li {
 		text-align: right;
 		border-top: 1px solid $tertiaryColor;
 	}
 
-	nav#mobile-nav a {
+	#mobile-nav a {
 		display: inline-block;
 		width: 100%;
 		padding: 1em 0;
 	}
 
-	nav#mobile-nav a::before {
+	#mobile-nav a::before {
 		top: -5px;
 	}
 }

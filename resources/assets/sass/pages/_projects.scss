@@ -3,7 +3,6 @@ article#project {
     #page-wrap {
         max-width: 800px;
         margin: 0 auto;
-        font-size: 1.15em;
     }
 
     .showcase {
@@ -47,7 +46,6 @@ article#project {
     h3 {
         font-size: 1.5em;
         margin: 25px 0 5px;
-        font-weight: bold;
         @include breakpoint(tablet) {
             margin: 0;
         }

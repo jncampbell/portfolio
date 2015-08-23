@@ -22,7 +22,7 @@
                 <p class="error"> Oops! There was an error.</p>
             @endif
         @else
-            <p class='light'>I check my messages pretty often so I'll usually respond within 24 hours.</p>
+            <p class='light'>I check my messages pretty often, so I'll usually respond within 24 hours.</p>
         @endif
     </div>
     <form id='contact-form' method='POST' action='' novalidate>

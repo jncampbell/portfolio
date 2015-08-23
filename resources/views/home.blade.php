@@ -18,13 +18,13 @@
                 <li>
                     <a href="{{ URL::to('/projects') }}">
                         <img src="/images/work-icon.png" alt="work-icon">
-                        <p>Work</p>
+                        <span>Work</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{ URL::to('/images/resume.pdf') }}">
                         <img src="/images/resume-icon.png" alt="resume-icon">
-                        <p>Resume</p>
+                        <span>Resume</span>
                     </a>
                 </li>
             </div>
@@ -32,13 +32,13 @@
                 <li>
                     <a href="{{ URL::to('/about') }}">
                         <img src="/images/about-icon.png" alt="about-icon">
-                        <p>About</p>
+                        <span>About</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{ URL::to('/contact') }}">
                         <img src="/images/contact-icon.png" alt="work-icon">
-                        <p>Contact</p>
+                        <span>Contact</span>
                     </a>
                 </li>
             </div>

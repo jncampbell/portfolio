@@ -18,9 +18,11 @@ article#contact {
 	}
 
 	p {
-		font-size: 1.25em;
-		line-height: 1.10em;
+		line-height: 1.5em;
 		padding: 1em;
+        @include breakpoint(iphone5-landscape) {
+            font-size: 1em;
+        }
 	}
 
 	p.email {

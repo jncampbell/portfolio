@@ -48,12 +48,19 @@ article#home {
         @include breakpoint(phablet) {
             display: block;
         }
+        @include breakpoint(iphone5-landscape) {
+            display: inline-block;
+        }
 
         + .row {
             margin-left: 90px;
             @include breakpoint(phablet) {
                 margin-left: 0;
                 margin-top: 50px;
+            }
+            @include breakpoint(iphone5-landscape) {
+                margin-left: 50px;
+                margin-top: 0;
             }
         }
     }
@@ -64,6 +71,10 @@ article#home {
         text-align: center;
         @include breakpoint(mobile-phone) {
             margin-top: 25px;
+        }
+        @include breakpoint(iphone5-landscape) {
+            margin-top: 0;
+            padding: 10px 0;
         }
 
         @keyframes slidein {
@@ -91,14 +102,24 @@ article#home {
         @include breakpoint(mobile-phone) {
             width: 50px;
         }
+        @include breakpoint(iphone5-landscape) {
+            width: 60px;
+        }
         + li {
             margin-left: 90px;
+            @include breakpoint(iphone5-landscape) {
+                margin-left: 50px;
+            }
         }
 
     }
 
     .hover-effect {
         transform: scale(1.25, 1.25);
+    }
+
+    #main-nav li img {
+        margin-bottom: 5px;
     }
 
     #main-nav ul a {

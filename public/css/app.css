@@ -1057,6 +1057,9 @@ table {
 |*/
 body {
   font: 100% 'Open Sans', sans-serif; }
+  @media only screen and (max-width: 480px) {
+    body {
+      font-size: 90%; } }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600; }
@@ -1087,9 +1090,19 @@ nav#mobile-nav ul {
 div#site-logo {
   text-transform: uppercase; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-  p {
-    font-size: .6em; } }
+p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  padding: 0 20px; }
+  @media only screen and (max-width: 600px) {
+    p {
+      padding: 0 5px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+    p {
+      line-height: 1.7em; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+    p {
+      font-size: .7em; } }
 
 a {
   color: #000;
@@ -1194,53 +1207,55 @@ img {
 /*					Header
 |============================================
 |
-|
+|w
 |*/
-header#site-header {
+#site-header {
   padding: 0;
   position: relative;
   border-bottom: 1px solid #d4d4d4; }
-  header#site-header nav#site-nav {
+  #site-header #site-nav {
     font-size: 1.25em;
     padding: 1.5em 0; }
     @media only screen and (max-width: 960px) {
-      header#site-header nav#site-nav {
+      #site-header #site-nav {
         padding: 1.25em 0; } }
-  header#site-header nav#site-nav div#site-logo {
-    display: inline-block; }
-  header#site-header nav#site-nav ul {
+  #site-header #site-nav #site-logo {
+    display: inline-block;
+    float: left; }
+  #site-header #site-nav ul {
     float: right; }
     @media only screen and (max-width: 960px) {
-      header#site-header nav#site-nav ul {
+      #site-header #site-nav ul {
         display: none; } }
-  header#site-header div#mobile-nav-toggle {
+  #site-header #mobile-nav-toggle {
     display: none;
     margin-top: -10px;
     height: 37.5px;
     width: 37.5px;
     cursor: pointer; }
     @media only screen and (max-width: 960px) {
-      header#site-header div#mobile-nav-toggle {
+      #site-header #mobile-nav-toggle {
         display: inline-block;
         float: right; } }
-  header#site-header nav#site-nav li {
+  #site-header #site-nav li {
     display: inline-block;
     padding: 0 10px; }
-  header#site-header nav#mobile-nav {
+  #site-header #mobile-nav {
     display: none;
     font-size: 1.25em;
     background: #fff;
+    width: 100%;
+    -webkit-transform: translateZ(0); }
+  #site-header #mobile-nav ul {
     width: 100%; }
-  header#site-header nav#mobile-nav ul {
-    width: 100%; }
-  header#site-header nav#mobile-nav li {
+  #site-header #mobile-nav li {
     text-align: right;
     border-top: 1px solid #d4d4d4; }
-  header#site-header nav#mobile-nav a {
+  #site-header #mobile-nav a {
     display: inline-block;
     width: 100%;
     padding: 1em 0; }
-  header#site-header nav#mobile-nav a::before {
+  #site-header #mobile-nav a::before {
     top: -5px; }
 
 #page-header {
@@ -1427,12 +1442,19 @@ article#home {
     @media only screen and (max-width: 600px) {
       article#home .row {
         display: block; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+      article#home .row {
+        display: inline-block; } }
     article#home .row + .row {
       margin-left: 90px; }
       @media only screen and (max-width: 600px) {
         article#home .row + .row {
           margin-left: 0;
           margin-top: 50px; } }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+        article#home .row + .row {
+          margin-left: 50px;
+          margin-top: 0; } }
   article#home #main-nav ul {
     margin-top: 50px;
     -webkit-animation: slidein 2s;
@@ -1441,6 +1463,10 @@ article#home {
     @media only screen and (max-width: 480px) {
       article#home #main-nav ul {
         margin-top: 25px; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+      article#home #main-nav ul {
+        margin-top: 0;
+        padding: 10px 0; } }
 
 @-webkit-keyframes slidein {
   0% {
@@ -1477,18 +1503,25 @@ article#home {
     @media only screen and (max-width: 480px) {
       article#home #main-nav li {
         width: 50px; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+      article#home #main-nav li {
+        width: 60px; } }
     article#home #main-nav li + li {
       margin-left: 90px; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+        article#home #main-nav li + li {
+          margin-left: 50px; } }
   article#home .hover-effect {
     -webkit-transform: scale(1.25, 1.25);
     transform: scale(1.25, 1.25); }
+  article#home #main-nav li img {
+    margin-bottom: 5px; }
   article#home #main-nav ul a:hover {
     color: #000; }
 
 article#project #page-wrap {
   max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.15em; }
+  margin: 0 auto; }
 
 article#project .showcase {
   padding: 60px 10px 0; }
@@ -1520,8 +1553,7 @@ article#project #carousel {
   width: 100%; }
   .project-container .showcase-overlay h3, .project-container .coming-soon-overlay h3 {
     font-size: 1.5em;
-    margin: 25px 0 5px;
-    font-weight: bold; }
+    margin: 25px 0 5px; }
     @media only screen and (max-width: 960px) {
       .project-container .showcase-overlay h3, .project-container .coming-soon-overlay h3 {
         margin: 0; } }
@@ -1600,10 +1632,6 @@ article#about section.about-section {
   max-width: 600px;
   margin: 40px auto; }
 
-article#about section.about-section {
-  font-size: 1.1em;
-  line-height: 1.5em; }
-
 article#about section.about-section p {
   margin-bottom: 2em; }
 
@@ -1625,9 +1653,11 @@ article#contact {
     margin: 0 auto;
     width: 90%; }
   article#contact p {
-    font-size: 1.25em;
-    line-height: 1.10em;
+    line-height: 1.5em;
     padding: 1em; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+      article#contact p {
+        font-size: 1em; } }
   article#contact p.email {
     font-size: 1.5em; }
   article#contact div.section-broadcast {

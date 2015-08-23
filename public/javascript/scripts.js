@@ -29,14 +29,14 @@
     //Toggle the mobile nav menu
     $(function () {
 
-        var site_header = $(document.getElementById('site-header'));
-        var mobile_toggle = $(document.getElementById('mobile-nav-toggle'));
-        var mobile_nav = $(document.getElementById('mobile-nav'));
+        var site_header   = $('#site-header');
+        var mobile_toggle = $('#mobile-nav-toggle');
+        var mobile_nav    = $('#mobile-nav');
 
         //Attach click event to menu toggle element
-        mobile_toggle.on('click', function (e) {
+        mobile_toggle.on('click touchstart', function (e) {
             e.preventDefault();
-            mobile_nav.slideToggle(500, 'easeOutExpo').appendTo(site_header);
+            mobile_nav.slideToggle(500, 'easeOutExpo');
         });
 
         //Close the menu if browser size increases beyond the mobile breakpoint

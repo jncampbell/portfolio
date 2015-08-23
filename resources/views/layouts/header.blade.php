@@ -1,6 +1,6 @@
-<header id='site-header' class="major-section-header" role='banner'>
+<header id='site-header' role='banner'>
     <div class='container-90'>
-        <nav id='site-nav' role='navigation'>
+        <nav id='site-nav' class="clearfix" role='navigation'>
             <div id='site-logo'>
                 <a href='/'>jnc</a>
             </div>

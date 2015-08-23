@@ -1,5 +1,7 @@
 var elixir = require('laravel-elixir');
 var autoprefixer = require('gulp-autoprefixer');
+var imagemin = require('gulp-imagemin');
+var gulp = require('gulp');
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -11,11 +13,19 @@ var autoprefixer = require('gulp-autoprefixer');
  |
  */
 
-elixir(function(mix) {
+gulp.task('images-opt', function() {
+   return gulp.src('resources/assets/images/*')
+       .pipe(imagemin())
+       .pipe(gulp.dest('public/images'));
+});
+
+elixir(function (mix) {
     mix.sass('app.scss');
 
     mix.scripts([
         'app.js'
     ], 'public/javascript/scripts.js');
 
+    mix.task('images-opt');
 });
+
