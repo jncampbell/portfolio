@@ -37,11 +37,10 @@
                 <h2>About this site</h2>
             </header>
             <p>
-                This site was built with Laravel, jQuery, HTML5, CSS and a little bit of Bootstrap.
+                This site was built with Laravel, jQuery, HTML5, CSS and a bit of Bootstrap.
                 The mockups and icons were downloaded from <a href="http://pixeden.com">Pixeden</a> and
-                <a href="http://flaticon.com">Flaticon</a>, respectively and I customized them both with photoshop.
-                Laravel comes bundled with SwiftMailer, so I hooked that up with <a href="https://www.mandrill.com/">Mandrill</a>
-                to power my contact form. All photos were taken by me.
+                <a href="http://flaticon.com">Flaticon</a>, respectively, and I customized them in photoshop.
+                My contact form is powered by SwiftMailer and <a href="https://www.mandrill.com/">Mandrill</a> (side note: Mandrill is super awesome). All photos were taken by me.
             </p>
         </section>
     </div>
