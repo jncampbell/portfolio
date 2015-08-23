@@ -57,12 +57,12 @@ class MessageController extends Controller
         Mail::send('emails.contact_email', ['body' => $message], function ($email) use ($message)
         {
             $email->from($message->contact->email);
-            $email->to(env('MAIL_MYADDRESS'))->subject($message->subject);
+            $email->to(env('MAIL_USERNAME'))->subject($message->subject);
         });
 
         Mail::send('emails.email_confirmation', ['email' => $message], function ($email) use ($message)
         {
-            $email->from(env('MAIL_MYADDRESS'));
+            $email->from(env('MAIL_USERNAME'));
             $email->to($message->contact->email)->subject('Email sent confirmation!');
         });
 
