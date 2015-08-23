@@ -1,0 +1,29 @@
+#removeEmail {
+
+    .broadcast-message {
+        font-size: 2em;
+        color: $secondaryColor;
+        margin-top: 150px;
+    }
+
+    div.oops {
+        width: 200px;
+        margin: 100px auto 0;
+        @include breakpoint(mobile-phone) {
+            width: 150px;
+            margin: 50px auto 0;
+
+        }
+    }
+
+    p {
+        margin: 25px 0;
+        text-align: center;
+    }
+
+    form#remove-email {
+       @include breakpoint(mobile-phone) {
+           padding-bottom: 50px;
+       }
+    }
+}

@@ -5,6 +5,6 @@
     <title></title>
 </head>
 <body>
-    <p>{{ $body }}</p>
+    <p>{{ $body->body }}</p>
 </body>
 </html>

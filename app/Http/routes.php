@@ -12,12 +12,11 @@
 */
 
 Route::get('/', 'PageController@home');
-
 Route::get('/about', 'PageController@about');
-
-Route::get('/contact', 'PageController@contact');
-Route::post('/contact', 'PageController@postContact');
-
 Route::get('/projects', 'PageController@projects');
 Route::get('/projects/club-app', 'PageController@clubApp');
 Route::get('/projects/wheresmyspaceship', 'PageController@wheresmyspaceship');
+
+
+Route::get('/contact', 'MessageController@contact');
+Route::post('/contact', 'MessageController@postContact');

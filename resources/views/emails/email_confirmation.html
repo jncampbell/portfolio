@@ -78,10 +78,11 @@
     }
 
     .email-footer li a {
+        font-size: 1.15em;
         display: inline-block;
         height: 100%;
         width: 100%;
-        padding: 20px 0;
+        padding: 15px 0;
     }
 
 </style>
@@ -100,16 +101,15 @@
         </div>
         <div class="original-message">
             <h2>Your original message</h2>
-            <p><span class="bold">Sent:</span> {{ $originalSendDatetime }} </p>
-            <p><span class="bold">Subject:</span> {{ $originalSubject }}</p>
-            <p><span class="bold">Message:</span> {{ $originalMessage }}</p>
+            <p><span class="bold">Sent:</span> {{ $message->created_at }} </p>
+            <p><span class="bold">Subject:</span> {{ $message->subject }}</p>
+            <p><span class="bold">Message:</span> {{ $message->message }}</p>
 
         </div>
     </div>
     <div class="email-footer">
         <ul>
             <li><a href="http://jncampbell.com">Visit Site</a></li>
-            <li><a href="http://jncampbell.com/remove_email/{{ $originalSender }}">I did not send this message</a></li>
         </ul>
     </div>
 </div>

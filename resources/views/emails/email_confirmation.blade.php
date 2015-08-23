@@ -21,16 +21,17 @@
         </div>
         <div class="original-message" style="border-top-width: 2px; border-top-color: #eee; border-top-style: solid; padding: 10px 0;">
             <h2 style="text-align: center; font-size: 16px; font-weight: normal;" align="center">Your original message</h2>
-            <p style="margin: 15px;"><span class="bold" style="font-weight: bold;">Sent:</span> {{ $originalSendDatetime }} </p>
-            <p style="margin: 15px;"><span class="bold" style="font-weight: bold;">Subject:</span> {{ $originalSubject }}</p>
-            <p style="margin: 15px;"><span class="bold" style="font-weight: bold;">Message:</span> {{ $originalMessage }}</p>
+            <p style="margin: 15px;"><span class="bold" style="font-weight: bold;">Sent:</span> {{ $email->created_at->format('l, F jS Y | h:ia T') }} </p>
+            <p style="margin: 15px;"><span class="bold" style="font-weight: bold;">Subject:</span> {{ $email->subject }}</p>
+            <p style="margin: 15px;"><span class="bold" style="font-weight: bold;">Message:</span> {{ $email->body }}</p>
 
         </div>
     </div>
     <div class="email-footer" style="max-width: 600px; overflow: hidden; background: #fff; margin: 0 auto;">
         <ul style="width: 100%; text-align: center; margin: 0; padding: 0; list-style: none;">
-            <li style="border-top-width: 2px; border-top-color: #eee; border-top-style: solid;"><a href="http://jncampbell.com" style="color: rgb(0, 181, 181); text-decoration: none; display: inline-block; height: 100%; width: 100%; padding: 20px 0;">Visit Site</a></li>
-            <li style="border-top-width: 2px; border-top-color: #eee; border-top-style: solid;"><a href="http://jncampbell.com/remove_email/%7B%7B%20%24originalSender%20%7D%7D" style="color: rgb(0, 181, 181); text-decoration: none; display: inline-block; height: 100%; width: 100%; padding: 20px 0;">I did not send this message</a></li>
+            <li style="border-top-width: 2px; border-top-color: #eee; border-top-style: solid;">
+                <a href="http://jncampbell.com" style="font-size: 1.15em; color: rgb(0, 181, 181); text-decoration: none; display: inline-block; height: 100%; width: 100%; padding: 15px 0;">Visit Site</a>
+            </li>
         </ul>
     </div>
 </div>

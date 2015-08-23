@@ -1314,6 +1314,15 @@ form button,
   background: rgba(0, 181, 181, 0.8);
   cursor: pointer; }
 
+#remove-email {
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto; }
+
+#remove-email button {
+  background: #d56b71;
+  border: 2px solid #d56b71; }
+
 input:focus,
 textarea:focus,
 input[type]:focus {
@@ -1675,5 +1684,26 @@ article#contact {
     height: 100%;
     z-index: 99999;
     background: url("/images/ajax-loader.gif") 50% 50% no-repeat rgba(255, 255, 255, 0.8); }
+
+#removeEmail .broadcast-message {
+  font-size: 2em;
+  color: #00b5b5;
+  margin-top: 150px; }
+
+#removeEmail div.oops {
+  width: 200px;
+  margin: 100px auto 0; }
+  @media only screen and (max-width: 480px) {
+    #removeEmail div.oops {
+      width: 150px;
+      margin: 50px auto 0; } }
+
+#removeEmail p {
+  margin: 25px 0;
+  text-align: center; }
+
+@media only screen and (max-width: 480px) {
+  #removeEmail form#remove-email {
+    padding-bottom: 50px; } }
 
 /*# sourceMappingURL=app.css.map */

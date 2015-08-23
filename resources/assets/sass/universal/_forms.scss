@@ -53,6 +53,17 @@ form button,
 	cursor: pointer;
 }
 
+#remove-email {
+    max-width: 400px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#remove-email button {
+    background: rgb(213, 107, 113);
+    border:2px solid rgb(213, 107, 113);
+}
+
 input:focus,
 textarea:focus,
 input[type]:focus {
