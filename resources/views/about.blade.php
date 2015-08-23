@@ -28,8 +28,8 @@
             </p>
             <p>
                 I love creating elegant, user-friendly websites. I'm comfortable using HTML, CSS,
-                Javascript (+ jQuery and AJAX), PHP, and Laravel. Learning is always an ongoing process for me. Right now
-                I'm learning design patterns and some of Laravel's advanced features.
+                Javascript (+ jQuery and AJAX), PHP, and Laravel. Learning is always an ongoing process for me. For instance, right now
+                I'm digging into design patterns and some of Laravel's advanced features.
             </p>
         </section>
         <section class="about-section">
