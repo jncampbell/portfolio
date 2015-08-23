@@ -25,7 +25,7 @@ class ContactFormRequest extends FormRequest {
     {
         return [
             'email'   => 'required|email',
-            'subject' => 'required|alpha_num_spaces',
+            'subject' => 'required',
             'message' => 'required'
         ];
 
