@@ -36,7 +36,7 @@
         //Attach click event to menu toggle element
         mobile_toggle.on('click touchstart', function (e) {
             e.preventDefault();
-            mobile_nav.slideToggle(500, 'easeOutExpo');
+            mobile_nav.slideToggle(250);
         });
 
         //Close the menu if browser size increases beyond the mobile breakpoint

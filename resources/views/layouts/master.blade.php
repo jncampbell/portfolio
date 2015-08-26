@@ -9,14 +9,11 @@
     <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="images/x-icon">
     <link rel='stylesheet' href='/css/app.css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-
-    {{--Bootstrap--}}
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
     @yield('content')
 </body>
-<script src="/javascript/scripts.js"></script>
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script async src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script async src="/javascript/scripts.js"></script>
 </html>
