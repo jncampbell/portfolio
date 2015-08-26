@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang='en'>
 <head>
     <title>@yield('title')</title>
@@ -12,8 +12,9 @@
 </head>
 <body>
     @yield('content')
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script async src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script async src="/javascript/scripts.js"></script>
 </body>
-<script async src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script async src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script async src="/javascript/scripts.js"></script>
+
 </html>

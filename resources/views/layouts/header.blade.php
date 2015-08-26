@@ -10,7 +10,7 @@
                 <li><a href='{{ URL::to("contact") }}'>contact</a></li>
             </ul>
             <div id='mobile-nav-toggle'>
-                <img src='/images/mobile-menu.png'>
+                <img src='/images/mobile-menu.png' alt='mobile-menu'>
             </div>
         </nav>
         <nav id='mobile-nav' role='navigation'>

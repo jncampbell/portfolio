@@ -5,16 +5,13 @@
 @section('content')
 <article id='home'>
         <section class='intro'>
-            <img class='avatar' src='images/avatar.jpg'>
+            <img class='avatar' src='images/avatar.jpg' alt="avatar">
             <h1>
-                <div>
-                    James Campbell | <span class='hightlight'>Web Developer</span>
-                </div>
+                James Campbell | <span class='hightlight'>Web Developer</span>
             </h1>
         </section>
     <nav id="main-nav">
-        <ul>
-            <div class="row">
+        <ul class="row">
                 <li>
                     <a href="{{ URL::to('/projects') }}">
                         <img src="/images/work-icon.png" alt="work-icon">
@@ -27,8 +24,9 @@
                         <span>Resume</span>
                     </a>
                 </li>
-            </div>
-            <div class="row">
+        </ul>
+        <ul class="row">
+
                 <li>
                     <a href="{{ URL::to('/about') }}">
                         <img src="/images/about-icon.png" alt="about-icon">
@@ -41,7 +39,6 @@
                         <span>Contact</span>
                     </a>
                 </li>
-            </div>
         </uL>
     </nav>
 </article>
