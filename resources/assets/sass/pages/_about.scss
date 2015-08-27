@@ -4,6 +4,11 @@ article#about {
 		height: 200px;
 		width: 100%;
 		overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
         @include breakpoint(phablet) {
             height: 100px;
         }
