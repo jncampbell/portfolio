@@ -15,7 +15,9 @@ var gulp = require('gulp');
 
 gulp.task('images-opt', function() {
    return gulp.src('resources/assets/images/*.*')
-       .pipe(imagemin())
+       .pipe(imagemin(
+           { progressive: true }
+       ))
        .pipe(gulp.dest('public/images'));
 });
 
