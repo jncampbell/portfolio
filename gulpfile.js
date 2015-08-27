@@ -3,8 +3,6 @@ var autoprefixer = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
 var gulp = require('gulp');
 
-require("laravel-elixir-requirejs");
-
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -30,6 +28,10 @@ elixir(function (mix) {
     mix.scripts([
         'app.js'
     ], 'public/javascript/scripts.js');
+
+    mix.scripts([
+        'modernizr.js'
+    ], 'public/javascript/modernizr.js');
 
     mix.task('images-opt');
 });

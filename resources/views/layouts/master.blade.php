@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='en' class="no-js">
 <head>
     <title>@yield('title')</title>
     <meta charset='utf-8'>
@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="images/x-icon">
     <link rel='stylesheet' href='/css/app.css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <script src="/javascript/modernizr.js"></script>
 </head>
 <body>
     @yield('content')
