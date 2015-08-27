@@ -44,6 +44,7 @@ class MessageController extends Controller
      */
     public function postContact(ContactFormRequest $request)
     {
+        var_dump($_SESSION);
         $contact = $this->contact->firstOrCreate([
             'email' => $request->get('email')
         ]);
