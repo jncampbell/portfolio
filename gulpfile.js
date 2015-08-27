@@ -2,6 +2,9 @@ var elixir = require('laravel-elixir');
 var autoprefixer = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
 var gulp = require('gulp');
+
+require("laravel-elixir-requirejs");
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
