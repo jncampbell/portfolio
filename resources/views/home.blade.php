@@ -13,11 +13,17 @@
     <nav id="main-nav">
         <ul class="row">
                 <li>
-                    <a href="{{ URL::to('/projects') }}">
-                        <img src="/images/work-icon.png" alt="work-icon">
-                        <span>Work</span>
+                    <a href="http://www.github.com/wheresmyspaceship">
+                        <img src="/images/github-icon.png" alt="github-icon">
+                        <span>Github</span>
                     </a>
                 </li>
+                {{--<li>--}}
+                    {{--<a href="{{ URL::to('/projects') }}">--}}
+                        {{--<img src="/images/work-icon.png" alt="work-icon">--}}
+                        {{--<span>Work</span>--}}
+                    {{--</a>--}}
+                {{--</li>--}}
                 <li>
                     <a href="{{ URL::to('/images/resume.pdf') }}">
                         <img src="/images/resume-icon.png" alt="resume-icon">

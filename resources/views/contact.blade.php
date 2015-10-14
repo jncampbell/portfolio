@@ -28,23 +28,26 @@
         <form id='contact-form' method='POST' action='#' novalidate>
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
+
+            <label for='email'>Email</label>
             @if($errors->first('email'))
                 <span class="error font-small">{{ ucfirst($errors->first('email')) }}</span>
             @endif
-            <label for='email'>Email</label>
-            <input type='email' name='email' id='email' value="<?php if (Input::old('email')) { print Input::old('email'); } ?>" placeholder='Your Email'>
+            <input type='email' name='email' id='email' value="<?php if (Input::old('email')) { print Input::old('email'); } ?>">
 
+
+            <label for='subject'>Subject</label>
             @if($errors->first('subject'))
                 <span class="error font-small">{{ ucfirst($errors->first('subject')) }}</span>
             @endif
-            <label for='subject'>Subject</label>
-            <input type='text' name='subject' id='subject' value="<?php if (Input::old('subject')) { print Input::old('subject'); } ?>" placeholder='Subject'>
+            <input type='text' name='subject' id='subject' value="<?php if (Input::old('subject')) { print Input::old('subject'); } ?>">
 
+
+            <label for='message'>Message</label>
             @if($errors->first('message'))
                 <span class='error font-small'> {{ ucfirst($errors->first('message')) }} </span>
             @endif
-            <label for='message'>Message</label>
-            <textarea rows='8' name='message' id='message' placeholder="What's up?"><?php if (Input::old('message')) { print Input::old('message'); } ?></textarea>
+            <textarea rows='8' name='message' id='message'><?php if (Input::old('message')) { print Input::old('message'); } ?></textarea>
 
             <button type='submit'>Send Message</button>
         </form>

@@ -91,6 +91,19 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+
+        'email' => [
+            'required' => ' is required',
+            'email' => ' must be a valid email address'
+        ],
+
+        'subject' => [
+            'required' => ' is required'
+        ],
+
+        'message' => [
+            'required' => ' is required'
+        ]
     ],
 
     /*
