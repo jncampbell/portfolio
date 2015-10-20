@@ -13,7 +13,7 @@
     <nav id="main-nav">
         <ul class="row">
                 <li>
-                    <a href="http://www.github.com/wheresmyspaceship">
+                    <a href="http://www.github.com/jncampbell">
                         <img src="/images/github-icon.png" alt="github-icon">
                         <span>Github</span>
                     </a>
