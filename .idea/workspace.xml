@@ -138,8 +138,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="122" />
-    <option name="y" value="75" />
+    <option name="x" value="12" />
+    <option name="y" value="80" />
     <option name="width" value="1533" />
     <option name="height" value="890" />
   </component>
@@ -402,7 +402,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="122" y="75" width="1533" height="890" extended-state="0" />
+    <frame x="12" y="80" width="1533" height="890" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
