@@ -39,6 +39,12 @@ class AuthController extends Controller
         $this->middleware('guest', ['except' => 'getLogout']);
     }
 
+    public function getLogout()
+    {
+        $this->auth->logout();
+        return redirect('auth/login');
+    }
+
     /**
      * Show the login page
      *
@@ -67,7 +73,7 @@ class AuthController extends Controller
         if ($this->auth->attempt($credentials, $request->has('remember'))) {
             return redirect()->intended($this->redirectPath());
         }
-        dd($credentials);
+ 
         return redirect($this->loginPath())
             ->withInput($request->only('username', 'password'))
             ->withErrors([

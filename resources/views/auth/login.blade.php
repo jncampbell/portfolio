@@ -17,11 +17,17 @@
                     Incorrect email or password
                 </div>
             @endif
-
-            <label for="username">Username:</label>
-            <input type="username" name="username" class="username" id="username" placeholder="Enter username" value="{{Input::old('username')}}">
-            <label for="password">Password:</label>
-            <input type="password" name="password" class="password" id="password" placeholder="Enter password">
+            <div class="input-container">
+                <label for="username">Username:</label>
+                <input type="username" name="username" class="username" id="username" placeholder="Enter username" value="{{Input::old('username')}}">
+            </div>
+           <div class="input-container">
+                <label for="password">Password:</label>
+                <input type="password" name="password" class="password" id="password" placeholder="Enter password">
+           </div>
+            <div class="input-container checkbox-container">
+                <input type="checkbox" name="remember">Remember Me
+            </div>
             <button type="submit">Login</button>
         </form>
     </div>
