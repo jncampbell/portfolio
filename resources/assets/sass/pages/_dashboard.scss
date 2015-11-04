@@ -1,0 +1,107 @@
+#dashboard {
+    section {
+        border-bottom: 1px solid #d4d4d4;
+        text-align: center;
+    }
+
+    .lg-icon {
+        max-width: 50px;
+    }
+
+    .option-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            flex-grow: 1;
+            max-width: 150px;
+            text-align: center;
+            height: 150px;
+            border: 1px solid #d4d4d4;
+            border-radius: 10px;
+        }
+
+        li + li {
+            margin-left: 100px;
+        }
+    }
+
+    .option {
+        transition: .1s ease-in;
+    }
+
+    .new-option:hover {
+        border: 1px solid rgb(58, 194, 137);
+    }
+
+    .edit-option:hover {
+        border: 1px solid rgb(70, 160, 220);
+    }
+
+    .delete-option:hover {
+        border: 1px solid rgb(240, 95, 79);
+    }
+
+    .option a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+
+        &:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+    section header {
+        text-align: center;
+    }
+
+    #contact-info-form {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #contact-info-form label {
+        display: inline;
+    }
+    #contact-info-form input {
+        display: inline;
+        width: 80%;
+        padding: .25em;
+    }
+
+    #contact-info-form .input-container {
+        display: flex;
+        justify-content: center;
+        align-item: center;
+    }
+
+    #contact-info-form label {
+        flex-grow: 1;
+        width: 75px;
+        line-height: 2em;
+        text-align: center;
+    }
+
+    #contact-info-form input {
+        flex-grow: 2;
+    }
+
+    #add-contact-info {
+        display: inline-flex;
+        align-items: center;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid #d4d4d4;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    #add-contact-info img {
+        height: 50px;
+        margin-right: 10px;
+
+    }
+}
