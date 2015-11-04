@@ -17,6 +17,9 @@ Route::get('/projects', 'PageController@projects');
 Route::get('/projects/club-app', 'PageController@clubApp');
 Route::get('/projects/wheresmyspaceship', 'PageController@wheresmyspaceship');
 
+Route::get('/auth/login', 'Auth\AuthController@getLogin');
+Route::post('/auth/login', 'Auth\AuthController@postLogin');
+Route::get('/dashboard', 'PageController@dashboard');
 
 Route::get('/contact', 'MessageController@contact');
 Route::post('/contact', 'MessageController@postContact');
