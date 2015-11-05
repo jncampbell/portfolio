@@ -63,7 +63,6 @@ p {
 
 a {
 	color: #000;
-	text-decoration: none;
 }
 
 p a {
@@ -72,6 +71,7 @@ p a {
 
 a:hover {
 	color: $secondaryColor;
+    text-decoration: none;
 }
 
 a:focus {
