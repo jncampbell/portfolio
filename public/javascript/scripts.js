@@ -11,7 +11,7 @@
 
     (function() {
         if (!isTouchDevice()) {
-            $('#main-nav').on('mouseenter touchstart', 'li', function(){
+            $('.grow-on-hover').on('mouseenter touchstart', 'li', function(){
                 $(this).addClass('hover-effect');
             }).on('mouseout touchend', 'li', function() {
                 $(this).removeClass('hover-effect');

@@ -10,22 +10,17 @@ article#home {
         margin-top: 150px;
         text-align: center;
         animation: fadein 900ms;
+
+        .secondary-row li {
+            display: inline-block;
+            width: 40px;
+        }
         @include breakpoint(mobile-phone) {
             margin-top: 25px;
         }
 
         @include breakpoint(iphone5-landscape) {
             margin-top: 20px;
-        }
-        @keyframes fadein {
-            from {
-                opacity: 0;
-                transform: scale(.2, .2);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1, 1);
-            }
         }
 
     }
@@ -43,11 +38,11 @@ article#home {
         }
     }
 
-    #main-nav {
+    nav {
         text-align: center;
     }
 
-    #main-nav ul {
+    nav ul {
         margin-top: 50px;
         animation: slidein 2s;
         text-align: center;
@@ -59,50 +54,14 @@ article#home {
             padding: 10px 0;
         }
 
-        @keyframes slidein {
-            0% {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-
-            60% {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0px);
-            }
-        }
     }
 
-    .row {
-        display: inline-block;
-        @include breakpoint(phablet) {
-            display: block;
-        }
-        @include breakpoint(iphone5-landscape) {
-            display: inline-block;
-        }
-
-        + .row {
-            margin-left: 90px;
-            @include breakpoint(phablet) {
-                margin-left: 0;
-                margin-top: 50px;
-            }
-            @include breakpoint(iphone5-landscape) {
-                margin-left: 50px;
-                margin-top: 0;
-            }
-        }
-    }
-
-    #main-nav li {
+    nav li {
         display: inline-block;
         text-align: center;
         width: 80px;
         transition: all .2s ease;
+
         @include breakpoint(mobile-phone) {
             width: 50px;
         }
@@ -110,7 +69,7 @@ article#home {
             width: 60px;
         }
         + li {
-            margin-left: 90px;
+            margin-left: 60px;
             @include breakpoint(iphone5-landscape) {
                 margin-left: 50px;
             }
@@ -118,19 +77,69 @@ article#home {
 
     }
 
-    .hover-effect {
-        transform: scale(1.25, 1.25);
-    }
-
-    #main-nav li img {
+    nav img {
         margin-bottom: 5px;
     }
 
-    #main-nav li a {
+    nav a {
         &:hover {
             color: #000;
         }
     }
+
+    //.social {
+    //    position: absolute;
+    //    top: 25px;
+    //    right: 50px;
+    //    animation: slidein 2s;
+    //    @include breakpoint(tablet) {
+    //        position: static;
+    //        margin: 30px auto 0;
+    //        text-align: center;
+    //    }
+    //}
+    //
+    //.social li {
+    //    display: inline-block;
+    //    width: 40px;
+    //    + li {
+    //        margin-left: 20px;
+    //    }
+    //}
+
+    //Animations
+
+    .hover-effect {
+        transform: scale(1.25, 1.25);
+    }
+
+    @keyframes slidein {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        60% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+            transform: scale(.2, .2);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+    }
+
 
 }
 
