@@ -1,0 +1,22 @@
+#add-project {
+    max-width: 1000px;
+    margin: 0 auto;
+    form label {
+        display: block;
+    }
+
+    .image-upload {
+        width: 100%;
+        border: 1px solid #d4d4d4;
+        padding: 1.5em;
+        border-radius: 5px;
+    }
+
+    .input-container:first-of-type {
+        margin-top: 20px;
+    }
+
+    textarea {
+        outline: none;
+    }
+}

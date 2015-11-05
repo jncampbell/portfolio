@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;
+
+use Illuminate\Auth\Guard;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 
@@ -63,8 +65,8 @@ class PageController extends Controller {
         return view('about');
     }
 
-    public function dashboard()
+    public function dashboard(Guard $auth)
     {
-        return view('dashboard');
+        return view('dashboard', ['user' => $auth->user()]);
     }
 }

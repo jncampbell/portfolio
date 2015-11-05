@@ -5753,6 +5753,21 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+#add-project {
+  max-width: 1000px;
+  margin: 0 auto; }
+  #add-project form label {
+    display: block; }
+  #add-project .image-upload {
+    width: 100%;
+    border: 1px solid #d4d4d4;
+    padding: 1.5em;
+    border-radius: 5px; }
+  #add-project .input-container:first-of-type {
+    margin-top: 20px; }
+  #add-project textarea {
+    outline: none; }
+
 /*
 |--------------------------------------------------------------------------
 | HTML 5 RESET
@@ -5939,6 +5954,12 @@ body {
 
 .top-heavy-cushion {
   padding: 20px 5px 15px; }
+
+.xl-claustrophobia {
+  margin: 25px 0; }
+
+.md-claustrophobia {
+  margin: 10px 0; }
 
 /*				Position Classes
 |============================================

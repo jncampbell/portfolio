@@ -59,4 +59,10 @@
 
 
 }(window.portfolio = window.portfolio || {}, jQuery));
+(function(addProject, $, undefined) {
+
+
+    $('div#showcaseImage').dropzone({ url: "/projects/create" });
+
+}(window.addProject = window.addProject || {}, jQuery));
 //# sourceMappingURL=scripts.js.map
