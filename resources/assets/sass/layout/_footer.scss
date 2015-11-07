@@ -10,24 +10,25 @@ footer[role='contentinfo'] {
 	width: 100%;
     margin-top: 40px;
 
-	ul.social-media {
+	.social-media {
     	padding: 1em 0px 0px;
 	}
 
-	ul.social-media a {
+	.social-media a {
 		display: inline-block;
 		height: 30px;
 		width: 30px;
 	}
 
-	ul.social-media li + li {
-		margin-left: 1em;
-	}
-	li {
+	.social-media li {
 		display: inline-block;
 	}
 
-	div.copyright {
+	.social-media li + li {
+		margin-left: 1em;
+	}
+
+	.copyright {
 		padding: 1em 0;
 		line-height: 1.55em;
 	}

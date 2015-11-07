@@ -53,6 +53,11 @@ class PageController extends Controller {
         return view('projects.wheresmyspaceship');
     }
 
+    public function timer()
+    {
+        return view('projects.timer');
+    }
+
     /**
      * Show the about page
      *

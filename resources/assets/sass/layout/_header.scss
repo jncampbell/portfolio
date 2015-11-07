@@ -88,6 +88,7 @@
     padding: 2em 0;
     font-weight: 600;
     border-bottom: 1px solid #d4d4d4;
+	margin-bottom: 2em;
     @include breakpoint(phablet) {
         padding: 1em 0;
     }

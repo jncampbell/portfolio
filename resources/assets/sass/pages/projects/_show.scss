@@ -1,0 +1,50 @@
+#project-show {
+    h2 {
+        margin: 1em 0em .25em;
+    }
+
+    p {
+        margin-bottom: 2em;
+    }
+
+    .showcase {
+        padding: 60px 10px 0;
+    }
+
+    #work-summary {
+        padding: 0 10px;
+        margin: 40px 0;
+    }
+
+    img {
+
+    }
+
+    .vertical-line {
+        height: 6em;
+        border: 1px solid;
+        width: 1px;
+        margin: -2em auto;
+    }
+
+    .position-box {
+        position: relative;
+    }
+
+    .screenshot {;
+        margin: 2em auto;
+        display: block;
+        header {
+            margin-bottom: 20px;
+        }
+
+        p.summary {
+            margin-bottom: 50px;
+        }
+    }
+
+    #carousel {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
