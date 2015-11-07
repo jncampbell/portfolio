@@ -5846,7 +5846,7 @@ body {
   height: 100vh;
   width: 100vw;
   text-align: center;
-  padding-top: 150px; }
+  padding-top: 120px; }
 
 .centered {
   text-align: center; }
@@ -5861,6 +5861,8 @@ body {
   max-width: 700px;
   width: 90%;
   margin: 0 auto; }
+  #page-wrap p {
+    margin-bottom: 2em; }
 
 .lg-head-claustrophobia {
   margin-top: 40px; }
@@ -5952,7 +5954,6 @@ body {
     color: gray; }
 
 #page-header {
-  padding: 2em 0;
   font-weight: 600;
   border-bottom: 1px solid #d4d4d4;
   margin-bottom: 2em; }
@@ -6069,9 +6070,6 @@ a:hover {
 |
 |
 |*/
-.centered {
-  text-align: center; }
-
 .critical {
   color: #d56b71; }
 
@@ -6153,6 +6151,7 @@ form button,
 .btn-std {
   width: 100%;
   padding: .75em;
+  margin-bottom: 1em;
   display: block;
   border-radius: 5px;
   border: 1px solid #d4d4d4;
@@ -6196,7 +6195,8 @@ input[type]:focus {
   outline: none; }
 
 .carousel-indicators {
-  bottom: -50px; }
+  bottom: -50px;
+  margin-bottom: 1em; }
 
 .carousel-indicators li {
   background: #d4d4d4;
@@ -6498,21 +6498,12 @@ article#contact {
 #project-show h2 {
   margin: 1em 0em .25em; }
 
-#project-show p {
-  margin-bottom: 2em; }
-
 #project-show .showcase {
   padding: 60px 10px 0; }
 
 #project-show #work-summary {
   padding: 0 10px;
   margin: 40px 0; }
-
-#project-show .vertical-line {
-  height: 6em;
-  border: 1px solid;
-  width: 1px;
-  margin: -2em auto; }
 
 #project-show .position-box {
   position: relative; }

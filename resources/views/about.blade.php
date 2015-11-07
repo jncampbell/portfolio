@@ -8,11 +8,10 @@
         <div id='about-banner'>
             <img src='images/about-code.jpg' alt="code-photo">
         </div>
-        <div class='container-90'>
-            <header id="page-header" class='centered'>
-                <h1>about me</h1>
-            </header>
-            <section class='about-section'>
+        <header id="page-header" class='centered lg-cushion'>
+            <h1>about me</h1>
+        </header>
+        <div id='page-wrap'>
                 <p>
                     Hi! I'm James Campbell, a web developer from Brooklyn, NY. I kind of wandered into
                     the development world as a senior at Baruch College when I registered for a C++
@@ -30,18 +29,17 @@
                     Javascript (+ jQuery and AJAX), PHP, and Laravel. Learning is always an ongoing process for me. For instance, right now
                     I'm digging into design patterns and some of Laravel's advanced features.
                 </p>
-            </section>
-            <section class="about-section">
-                <header class="centered">
-                    <h2>About this site</h2>
-                </header>
+
+
+                <h2 class="centered md-cushion">About this site</h2>
+
                 <p>
                     This site was built with Laravel, jQuery, HTML5, CSS and a bit of Bootstrap.
                     The mockups and icons were downloaded from <a href="http://pixeden.com">Pixeden</a> and
                     <a href="http://flaticon.com">Flaticon</a>, respectively, and I customized them in photoshop.
                     My contact form is powered by SwiftMailer and <a href="https://www.mandrill.com/">Mandrill</a> (side note: Mandrill is super awesome). All photos were taken by me.
                 </p>
-            </section>
+
         </div>
     </article>
     @include('layouts.footer')

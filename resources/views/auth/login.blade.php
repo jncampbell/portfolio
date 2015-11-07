@@ -3,7 +3,7 @@
     James Campbell | Login
 @stop
 @section('content')
-
+    @include('layouts.header')
 
     <div class="flex-container">
         <header id="login-header">

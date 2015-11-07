@@ -8,7 +8,7 @@
         <div id='contact-banner'>
             <img src='images/desktop.jpg' alt="desktop-photo">
         </div>
-        <header id="page-header" class="centered">
+        <header id="page-header" class="centered lg-cushion">
             <h1>contact me</h1>
         </header>
 
@@ -18,7 +18,7 @@
             @elseif($errors->all())
                 @if ($errors->count() > 1)
                     <p class="error"> Oops! There were some errors.</p>
-                @elseif ($errors->count())
+                @else
                     <p class="error"> Oops! There was an error.</p>
                 @endif
             @else
@@ -28,26 +28,25 @@
         <form id='contact-form' method='POST' action='#' novalidate>
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-
             <label for='email'>Email</label>
             @if($errors->first('email'))
                 <span class="error font-small">{{ ucfirst($errors->first('email')) }}</span>
             @endif
-            <input type='email' name='email' id='email' value="<?php if (Input::old('email')) { print Input::old('email'); } ?>">
+            <input type='email' name='email' id='email' value="{{ Input::old('email') }}">
 
 
             <label for='subject'>Subject</label>
             @if($errors->first('subject'))
                 <span class="error font-small">{{ ucfirst($errors->first('subject')) }}</span>
             @endif
-            <input type='text' name='subject' id='subject' value="<?php if (Input::old('subject')) { print Input::old('subject'); } ?>">
+            <input type='text' name='subject' id='subject' value="{{ Input::old('subject') }}">
 
 
             <label for='message'>Message</label>
             @if($errors->first('message'))
                 <span class='error font-small'> {{ ucfirst($errors->first('message')) }} </span>
             @endif
-            <textarea rows='8' name='message' id='message'><?php if (Input::old('message')) { print Input::old('message'); } ?></textarea>
+            <textarea rows='8' name='message' id='message'>{{ Input::old('message') }}</textarea>
 
             <button type='submit'>Send Message</button>
         </form>

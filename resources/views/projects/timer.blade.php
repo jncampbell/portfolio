@@ -5,7 +5,7 @@
 @section('content')
     @include('layouts.header')
 
-    <header id="page-header" class="centered">
+    <header id="page-header" class="centered lg-cushion">
         <h1>Productivity Timer</h1>
 
         <p class="light">Mac OS X Application</p>

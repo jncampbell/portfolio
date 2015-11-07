@@ -5,7 +5,7 @@
 @section('content')
     @include('layouts.header')
     <article id='project-index'>
-        <header id="page-header" class='centered'>
+        <header id="page-header" class='centered lg-cushion'>
             <h1>Projects</h1>
         </header>
         <section class="container-90">
