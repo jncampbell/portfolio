@@ -22,6 +22,10 @@ body {
 	padding-top: 150px;
 }
 
+.centered {
+	text-align: center;
+}
+
 .clearfix::before,
 .clearfix::after {
 	content: '';
@@ -37,4 +41,40 @@ body {
 
 .lg-head-claustrophobia {
 	margin-top: 40px;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #d4d4d4;
+}
+
+.xl-cushion {
+	padding: 50px 5px;
+}
+
+.lg-cushion {
+	padding: 30px 5px;
+}
+
+.md-cushion {
+	padding: 20px 5px;
+}
+
+.sm-cushion {
+	padding: 10px 5px;
+}
+
+.xs-cushion {
+	padding: 5px 5px;
+}
+
+.top-heavy-cushion {
+	padding: 20px 5px 15px;
+}
+
+.xl-claustrophobia {
+	margin: 25px 0;
+}
+
+.md-claustrophobia {
+	margin: 10px 0;
 }

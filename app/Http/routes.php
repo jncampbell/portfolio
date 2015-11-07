@@ -24,5 +24,10 @@ Route::post('/auth/login', 'Auth\AuthController@postLogin');
 Route::get('/auth/logout', 'Auth\AuthController@getLogout');
 Route::get('/dashboard', 'PageController@dashboard');
 
+Route::get('/projects/new', 'ProjectController@create');
+Route::get('/projects/edit', 'ProjectController@edit');
+Route::get('/projects/delete', 'ProjectController@delete');
+
+
 Route::get('/contact', 'MessageController@contact');
 Route::post('/contact', 'MessageController@postContact');

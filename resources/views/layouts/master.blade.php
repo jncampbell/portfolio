@@ -9,12 +9,15 @@
     <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="images/x-icon">
     <link rel='stylesheet' href='/css/app.css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.2.0/dropzone.css">
     <script src="/javascript/modernizr.js"></script>
 </head>
 <body>
     @yield('content')
+    @yield('scripts.page-specific')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.2.0/dropzone.js'></script>
     <script src="/javascript/scripts.js"></script>
 </body>
 

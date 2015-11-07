@@ -14,7 +14,10 @@ class UserTableSeeder extends Seeder
     {
         DB::table('users')->insert([
             'username' => env('USERNAME'),
-            'password' => Hash::make(env('PASSWORD'))
+            'password' => Hash::make(env('PASSWORD')),
+            'linkedin' => env('LINKEDIN'),
+            'github'   => env('GITHUB'),
+            'email'    => env('EMAIL')
         ]);
     }
 }
