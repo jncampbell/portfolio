@@ -6254,6 +6254,9 @@ article#home {
     text-align: center;
     -webkit-animation: fadein 900ms;
     animation: fadein 900ms; }
+    @media only screen and (max-height: 630px) {
+      article#home .intro {
+        padding-top: 75px; } }
     @media only screen and (max-width: 480px) {
       article#home .intro {
         padding-top: 25px; } }
@@ -6269,6 +6272,20 @@ article#home {
     @media only screen and (max-width: 480px) {
       article#home h1 {
         font-size: 1.1em; } }
+  article#home .row {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center; }
+  article#home .col {
+    display: inline-block; }
+    @media only screen and (max-width: 480px) {
+      article#home .col {
+        display: block; } }
+  article#home .col + .col {
+    margin-left: 60px; }
+    @media only screen and (max-width: 480px) {
+      article#home .col + .col {
+        margin-left: 0; } }
   article#home nav {
     text-align: center; }
   article#home nav ul {
@@ -6294,18 +6311,21 @@ article#home {
     @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
       article#home nav li {
         width: 60px; } }
-    article#home nav li + li {
-      margin-left: 60px; }
-      @media only screen and (max-width: 480px) {
-        article#home nav li + li {
-          margin-left: 50px; } }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-        article#home nav li + li {
-          margin-left: 50px; } }
+  article#home nav li + li {
+    margin-left: 60px; }
+    @media only screen and (max-width: 480px) {
+      article#home nav li + li {
+        margin-left: 50px; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+      article#home nav li + li {
+        margin-left: 50px; } }
   article#home nav img {
     margin-bottom: 5px; }
-  article#home nav a:hover {
-    color: #000; }
+  article#home nav a {
+    display: inline-block;
+    width: 100%; }
+    article#home nav a:hover {
+      color: #000; }
   article#home .hover-effect {
     -webkit-transform: scale(1.25, 1.25);
     transform: scale(1.25, 1.25); }

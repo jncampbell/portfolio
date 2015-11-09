@@ -11,6 +11,10 @@ article#home {
         text-align: center;
         animation: fadein 900ms;
 
+        @include breakpoint(short-browser) {
+            padding-top: 75px;
+        }
+
         @include breakpoint(mobile-phone) {
             padding-top: 25px;
         }
@@ -31,6 +35,26 @@ article#home {
         margin: 1em 0;
         @include breakpoint(mobile-phone) {
             font-size: 1.1em;
+        }
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .col {
+        display: inline-block;
+        @include breakpoint(mobile-phone) {
+            display: block;
+        }
+    }
+
+    .col + .col {
+        margin-left: 60px;
+        @include breakpoint(mobile-phone) {
+            margin-left: 0;
         }
     }
 
@@ -64,23 +88,27 @@ article#home {
         @include breakpoint(iphone5-landscape) {
             width: 60px;
         }
-        + li {
-            margin-left: 60px;
-            @include breakpoint(mobile-phone) {
-                margin-left: 50px;
-            }
-            @include breakpoint(iphone5-landscape) {
-                margin-left: 50px;
-            }
-        }
-
     }
+
+    nav li + li {
+        margin-left: 60px;
+        @include breakpoint(mobile-phone) {
+            margin-left: 50px;
+        }
+        @include breakpoint(iphone5-landscape) {
+            margin-left: 50px;
+        }
+    }
+
 
     nav img {
         margin-bottom: 5px;
     }
 
     nav a {
+        display: inline-block;
+        width: 100%;
+
         &:hover {
             color: #000;
         }

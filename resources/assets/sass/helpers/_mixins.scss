@@ -1,4 +1,9 @@
 @mixin breakpoint($point) {
+
+	@if $point == short-browser {
+		@media only screen and (max-height: 630px) { @content };
+	}
+
 	@if $point == tablet {
 		@media only screen and (max-width: 960px) { @content };
 	}

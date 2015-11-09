@@ -21,15 +21,8 @@
                 coding and discovered a passion for web development. My
                 plan is to deepen my knowledge of software, build my
                 network and eventually launch a startup of my own.
-                But, along the way I'm hoping to connect with
-                talented people who really care about the
-                work they do.
-            </p>
-
-            <p>
-                If I'm not coding or learning something new, I'm probably
-                reading, working out, or at home with my girlfriend
-                watching something with a high IMDB rating.
+                Along the way I'm hoping to connect with talented
+                people who really want to make an impact on the world.
             </p>
 
             <h2 class="centered md-cushion">About this site</h2>
@@ -37,9 +30,9 @@
             <p>
                 This site was built with Laravel, jQuery, HTML5, CSS and a bit of Bootstrap.
                 The mockups and icons were downloaded from <a href="http://pixeden.com">Pixeden</a> and
-                <a href="http://flaticon.com">Flaticon</a>, respectively, and I customized them in photoshop.
-                My contact form is powered by SwiftMailer and <a href="https://www.mandrill.com/">Mandrill</a> (side
-                note: Mandrill is super awesome). All photos were taken by me.
+                <a href="http://flaticon.com">Flaticon</a>, respectively, and I customized them in Photoshop.
+                My contact form is powered by SwiftMailer and <a href="https://www.mandrill.com/">Mandrill</a>.
+                All photos were taken by me.
             </p>
 
         </div>
