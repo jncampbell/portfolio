@@ -1,3 +1,3 @@
-<footer role='contentinfo'>
-    <div class='copyright'> &copy; 2015 &middot; J.N. Campbell</div>
+<footer role='contentinfo' class="md-cushion">
+    <div class='copyright'> Copyright &copy; Made by James Campbell &middot; 2015</div>
 </footer>

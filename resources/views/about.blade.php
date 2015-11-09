@@ -12,33 +12,35 @@
             <h1>about me</h1>
         </header>
         <div id='page-wrap'>
-                <p>
-                    Hi! I'm James Campbell, a web developer from Brooklyn, NY. I kind of wandered into
-                    the development world as a senior at Baruch College when I registered for a C++
-                    course and fell absolutely in love with coding. It was all I wanted to do -
-                    all day, every day. After graduating with a degree in Entrepreneurship &
-                    Management I continued coding and discovered a passion for web
-                    development. I'm also equally passionate about business and
-                    love opportunities to combine the two. If I'm not coding,
-                    I'm probably reading, working out, or at home with my
-                    girlfriend watching something with a high IMDB
-                    rating.
-                </p>
-                <p>
-                    I love creating elegant, user-friendly websites. I'm comfortable using HTML, CSS,
-                    Javascript (+ jQuery and AJAX), PHP, and Laravel. Learning is always an ongoing process for me. For instance, right now
-                    I'm digging into design patterns and some of Laravel's advanced features.
-                </p>
+            <p>
+                I'm James Campbell, a web developer from Brooklyn, NY. My interest in software
+                started as a senior at Baruch College when I registered for a C++ course and
+                fell absolutely in love with coding. It was all I wanted to do - all day,
+                every day. After graduating with a B.B.A in Entrepreneurship &
+                Management (another area I'm passionate about), I continued
+                coding and discovered a passion for web development. My
+                plan is to deepen my knowledge of software, build my
+                network and eventually launch a startup of my own.
+                But, along the way I'm hoping to connect with
+                talented people who really care about the
+                work they do.
+            </p>
 
+            <p>
+                If I'm not coding or learning something new, I'm probably
+                reading, working out, or at home with my girlfriend
+                watching something with a high IMDB rating.
+            </p>
 
-                <h2 class="centered md-cushion">About this site</h2>
+            <h2 class="centered md-cushion">About this site</h2>
 
-                <p>
-                    This site was built with Laravel, jQuery, HTML5, CSS and a bit of Bootstrap.
-                    The mockups and icons were downloaded from <a href="http://pixeden.com">Pixeden</a> and
-                    <a href="http://flaticon.com">Flaticon</a>, respectively, and I customized them in photoshop.
-                    My contact form is powered by SwiftMailer and <a href="https://www.mandrill.com/">Mandrill</a> (side note: Mandrill is super awesome). All photos were taken by me.
-                </p>
+            <p>
+                This site was built with Laravel, jQuery, HTML5, CSS and a bit of Bootstrap.
+                The mockups and icons were downloaded from <a href="http://pixeden.com">Pixeden</a> and
+                <a href="http://flaticon.com">Flaticon</a>, respectively, and I customized them in photoshop.
+                My contact form is powered by SwiftMailer and <a href="https://www.mandrill.com/">Mandrill</a> (side
+                note: Mandrill is super awesome). All photos were taken by me.
+            </p>
 
         </div>
     </article>
