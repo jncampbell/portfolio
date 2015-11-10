@@ -12,7 +12,7 @@
             <section id="visitors" class="xl-cushion">
                 <header><h2>Visitors</h2></header>
                 <p class="xl-font sm-cushion">
-                     <!-- Add visitor count here -->
+                     {{ $totalVisitors }}
                 </p>
             </section>
             <section id="projects" class="xl-cushion">
