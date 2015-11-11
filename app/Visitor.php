@@ -4,9 +4,21 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
+
 class Visitor extends Model
 {
+    /**
+     * The table associated with the model
+     *
+     * @var string
+     */
     protected $table = "ip_addresses";
+
+    /**
+     * The fillable attributes of the model
+     *
+     * @var array
+     */
     protected $fillable = ["ip"];
 
     /**
@@ -26,8 +38,12 @@ class Visitor extends Model
         }
     }
 
-
-    public function hasBeenStoredRecently()
+    /**
+     * Check if a visitor's IP address has been stored recently
+     *
+     * @return bool
+     */
+    private function hasBeenStoredRecently()
     {
         return $this->where('ip', $this->ip)
                     ->where('created_at', '>=', Carbon::now()->subHours(2))
@@ -35,11 +51,16 @@ class Visitor extends Model
     }
 
 
-    //return num of unique visitors in last week
+    /**
+     * Return the number of visitors within the last week
+     *
+     * @return mixed
+     */
     public static function numberOfRecentVisitors()
     {
-        $visitor = new Visitor;
-        return $visitor->select('*')->where('created_at', '>=', Carbon::now()->subDays(7))->count();
+        return (new static)->select('*')
+                           ->where('created_at', '>=', Carbon::now()->subDays(7))
+                           ->count();
     }
 
 }

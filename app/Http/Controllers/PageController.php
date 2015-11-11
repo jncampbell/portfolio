@@ -19,8 +19,7 @@ class PageController extends Controller
     public function home(Request $request)
     {
         $visitor = new Visitor;
-        $visitor->ip = $request->ip();
-        $visitor->storeIPAddress();
+        $visitor->storeIPAddress($request->ip());
         return response()->view('home');
     }
 
