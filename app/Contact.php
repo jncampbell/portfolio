@@ -20,6 +20,11 @@ class Contact extends Model
      */
     protected $fillable = ['email'];
 
+    /**
+     * The messages that belong to the contact
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function messages()
     {
         return $this->hasMany('App\Messages');
