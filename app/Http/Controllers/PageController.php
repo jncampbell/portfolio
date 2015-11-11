@@ -65,8 +65,15 @@ class PageController extends Controller
         return view('about');
     }
 
+    /**
+     * Show the dashboard page
+     *
+     * @param Guard $auth
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function dashboard(Guard $auth)
     {
-        return view('dashboard', ['user' => $auth->user(), 'recentVisitors' => Visitor::numberOfRecentVisitors()]);
+        return view('dashboard', ['user' => $auth->user(), 'recentVisitors' => Visitor::countRecent()]);
     }
 }

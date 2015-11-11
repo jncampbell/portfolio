@@ -33,30 +33,15 @@ class Visitor extends Model
             throw new \Exception('IP Address is not set');
         }
 
-        if (!$this->hasBeenStoredRecently()) {
-            return $this->create(["ip" => $this->ip]);
-        }
+        return $this->create(["ip" => $this->ip]);
     }
-
-    /**
-     * Check if a visitor's IP address has been stored recently
-     *
-     * @return bool
-     */
-    private function hasBeenStoredRecently()
-    {
-        return $this->where('ip', $this->ip)
-                    ->where('created_at', '>=', Carbon::now()->subHours(2))
-                    ->first() ? true : false;
-    }
-
-
+    
     /**
      * Return the number of visitors within the last week
      *
      * @return mixed
      */
-    public static function numberOfRecentVisitors()
+    public static function countRecent()
     {
         return (new static)->select('*')
                            ->where('created_at', '>=', Carbon::now()->subDays(7))
