@@ -19,7 +19,8 @@ class PageController extends Controller
     public function home(Request $request)
     {
         $visitor = new Visitor;
-        $visitor->storeIPAddress($request->ip());
+        $visitor->ip = $request->ip();
+        $visitor->storeIPAddress();
         return response()->view('home');
     }
 
@@ -66,6 +67,6 @@ class PageController extends Controller
 
     public function dashboard(Guard $auth)
     {
-        return view('dashboard', ['user' => $auth->user(), 'totalVisitors' => Visitor::numberOfRecentVisitors()]);
+        return view('dashboard', ['user' => $auth->user(), 'recentVisitors' => Visitor::numberOfRecentVisitors()]);
     }
 }
