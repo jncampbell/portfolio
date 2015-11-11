@@ -19,7 +19,7 @@ class User extends Model implements AuthenticatableContract
 
 
     /**
-     * The user attributes that can be set
+     * The fillable attributes of the model
      *
      * @var array
      */

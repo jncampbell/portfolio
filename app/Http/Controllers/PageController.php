@@ -2,29 +2,30 @@
 
 namespace App\Http\Controllers;
 
-
 use App\Http\Controllers\Controller;
-
 use Illuminate\Auth\Guard;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use App\Visitor;
 
-class PageController extends Controller {
-
-    private $dateTimeFormat = 'h:ia \\o\\n l F jS Y T'; //Ex: 12:00pm on January 1st 2015 EDT
+class PageController extends Controller
+{
 
     /**
      * Show the home page
      *
      * @return \Illuminate\View\View
      */
-    public function home()
+    public function home(Request $request)
     {
-        return view('home');
+        $visitor = new Visitor;
+        $visitor->ip = $request->ip();
+        $visitor->storeIPAddress();
+        return response()->view('home');
     }
 
     /**
-     * Show the projects page
+     * Show the projects index page
      *
      * @return \Illuminate\View\View
      */
@@ -45,16 +46,10 @@ class PageController extends Controller {
     }
 
     /**
+     * Show the timer app showcase
      *
-     * Show the blog showcase
-     *
-     * @return \Illuminate\View\View
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function wheresmyspaceship()
-    {
-        return view('projects.wheresmyspaceship');
-    }
-
     public function timer()
     {
         return view('projects.timer');
@@ -72,6 +67,6 @@ class PageController extends Controller {
 
     public function dashboard(Guard $auth)
     {
-        return view('dashboard', ['user' => $auth->user()]);
+        return view('dashboard', ['user' => $auth->user(), 'recentVisitors' => Visitor::numberOfRecentVisitors()]);
     }
 }
