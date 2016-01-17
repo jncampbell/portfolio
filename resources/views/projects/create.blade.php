@@ -51,6 +51,3 @@
         </div>
     </article>
 @stop
-@section('scripts.page-specific')
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.2.0/dropzone.js'></script>
-@stop

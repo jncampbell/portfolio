@@ -30,5 +30,4 @@
         </section>
     </article>
     @include('layouts.footer')
-
 @stop
