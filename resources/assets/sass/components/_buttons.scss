@@ -1,0 +1,27 @@
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 200px;
+    padding: 2.5px 5px;
+    font-size: .9em;
+    line-height: 1.5em;
+}
+
+.btn-project-link {
+    border: 2px solid opacity($secondaryColor, .5);
+    margin: 10px 0;
+    @include breakpoint(mobile-phone) {
+        display: block;
+        margin: 10px auto;
+    }
+    + .btn-project-link {
+        margin-left: 10px;
+        @include breakpoint(mobile-phone) {
+            margin: 10px auto;
+        }
+    }
+    &:hover {
+        color: $secondaryColor;
+    }
+}

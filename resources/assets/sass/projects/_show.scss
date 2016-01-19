@@ -1,32 +1,23 @@
 #project-show {
-    h2 {
-        margin: 1em 0em .25em;
+
+    max-width: 700px;
+    margin: 0 auto;
+
+    .project-section {
+        margin: 50px 0;
     }
 
-    .showcase {
-        padding: 60px 10px 0;
+    .project-section h2 {
+        margin-bottom: 20px;
     }
 
-    #work-summary {
-        padding: 0 10px;
-        margin: 40px 0;
+    .project-description {
+        margin-bottom: 30px;
     }
 
-
-    .position-box {
-        position: relative;
-    }
-
-    .screenshot {;
-        margin: 2em auto;
+    .screenshot {
+        margin: 40px auto;
         display: block;
-        header {
-            margin-bottom: 20px;
-        }
-
-        p.summary {
-            margin-bottom: 50px;
-        }
     }
 
     #carousel {

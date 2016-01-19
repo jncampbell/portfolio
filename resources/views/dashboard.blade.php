@@ -6,7 +6,7 @@
     @include('layouts.header')
     <div class="container-90">
         <article id="dashboard">
-            <header class="centered border-bottom lg-cushion">
+            <header class="border-bottom">
                 <h1>Dashboard</h1>
             </header>
             <section id="visitors" class="xl-cushion">

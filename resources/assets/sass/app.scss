@@ -3,7 +3,7 @@
 
 @import 'helpers/reset';
 @import 'helpers/variables';
-@import 'helpers/mixins';
+@import 'helpers/breakpoints';
 @import 'helpers/functions';
 
 
@@ -15,11 +15,15 @@
 @import 'universal/typography';
 
 
+@import 'components/buttons';
+
+
 @import 'layout/containers';
 @import 'layout/header';
 @import 'layout/footer';
 
 
+@import 'pages/global';
 @import 'pages/home';
 @import 'pages/about';
 @import 'pages/contact';
