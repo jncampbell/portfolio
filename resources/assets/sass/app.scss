@@ -1,21 +1,19 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 
-@import 'helpers/reset';
-@import 'helpers/variables';
-@import 'helpers/breakpoints';
-@import 'helpers/functions';
-
-
-@import 'universal/forms';
-@import 'universal/icons';
-@import 'universal/images';
-@import 'universal/position-classes';
-@import 'universal/slideshow';
-@import 'universal/typography';
+@import 'global/reset';
+@import 'global/variables';
+@import 'global/breakpoints';
+@import 'global/functions';
+@import 'global/position-classes';
+@import 'global/typography';
 
 
 @import 'components/buttons';
+@import 'components/forms';
+@import 'components/icons';
+@import 'components/images';
+@import 'components/slideshow';
 
 
 @import 'layout/containers';
