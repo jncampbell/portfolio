@@ -25,7 +25,6 @@
     });
 
 
-
     //Toggle the mobile nav menu
     $(function () {
 

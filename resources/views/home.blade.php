@@ -11,7 +11,7 @@
                 James Campbell | <span class='hightlight'>Web Developer</span>
             </h1>
         </section>
-        <div class="row">
+        <div class="row centered">
             <nav class="grow-on-hover col">
                 <ul>
                     <li>

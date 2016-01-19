@@ -49,10 +49,6 @@ div#site-logo {
 p {
     font-size: 1.1em;
     line-height: 1.5em;
-    padding: 0 20px;
-    @include breakpoint(phablet) {
-        padding: 0 5px;
-    }
     @include breakpoint(iphone5-landscape) {
         line-height: 1.7em;
     }

@@ -1,0 +1,27 @@
+#project-show {
+
+    max-width: 700px;
+    margin: 0 auto;
+
+    .project-section {
+        margin: 50px 0;
+    }
+
+    .project-section h2 {
+        margin-bottom: 20px;
+    }
+
+    .project-description {
+        margin-bottom: 30px;
+    }
+
+    .screenshot {
+        margin: 40px auto;
+        display: block;
+    }
+
+    #carousel {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}

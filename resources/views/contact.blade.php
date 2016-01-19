@@ -8,7 +8,7 @@
         <div id='contact-banner'>
             <img src='images/desktop.jpg' alt="desktop-photo">
         </div>
-        <header id="page-header" class="centered lg-cushion">
+        <header id="page-header">
             <h1>contact me</h1>
         </header>
 

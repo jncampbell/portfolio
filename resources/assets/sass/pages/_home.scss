@@ -1,9 +1,5 @@
-/*					Home Page
-|============================================
-|
-|
-|*/
 article#home {
+
     height: 100vh;
 
     .intro {
@@ -41,7 +37,6 @@ article#home {
     .row {
         margin-left: 0;
         margin-right: 0;
-        text-align: center;
     }
 
     .col {
@@ -63,7 +58,7 @@ article#home {
     }
 
     nav ul {
-        margin-top: 40px;
+        margin-top: 30px;
         animation: slidein 2s;
         text-align: center;
         @include breakpoint(mobile-phone) {
