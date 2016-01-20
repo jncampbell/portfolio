@@ -1,0 +1,9 @@
+#page-header {
+    padding: 24px 0;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: $thinBorderGray;
+    @include breakpoint(tablet) {
+        padding: 20px 0;
+    }
+}

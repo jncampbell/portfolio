@@ -69,7 +69,7 @@
 
                 <p class="project-type">PHP Web Application</p>
                 <p class="project-description">
-                    This app in currently in development. My goal is to radically simplify the process
+                    This app in currently in development. My goal is to simplify the process
                     of attending nightclubs with your friends.
                 </p>
 

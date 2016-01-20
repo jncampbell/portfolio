@@ -7,10 +7,11 @@
 
     <header id="page-header">
         <h1>Productivity Timer</h1>
-
-        <p class="light">Mac OS X Application</p>
+        <p class="project-type">Mac OS X Application</p>
     </header>
+
     <article id="project-show">
+
         <section class="project-section">
             <p class="project-description">
                 I created this application because I wanted to track some basic productivity measures
@@ -20,8 +21,9 @@
             </p>
             <img src="/images/timer-1.jpg" alt="Mac OS X Timer" class="screenshot">
         </section>
+
         <section class="project-section">
-            <h2 class="centered">How Does it Work?</h2>
+            <h2>How Does it Work?</h2>
             <p class="project-description">
                 It's a very simple app that includes a timer that I use to start, pause, and end a session. When a
                 session ends, the data is saved to a file and the timer is reset in preparation for the next
@@ -37,8 +39,9 @@
             </p>
             <img src="/images/timer-3.jpg" alt="Mac OS X Timer" class="screenshot">
         </section>
+
         <section class="project-section">
-            <h2 class="centered">Takeaways</h2>
+            <h2>Takeaways</h2>
             <p class="project-description">
                 This was my first time building a Mac application or using the Swift programming language so, a lot
                 of this process was familiarizing myself with some aspects of Mac development including Storyboards,
@@ -49,6 +52,7 @@
                 and the ability to set the data file's save location in the app's preferences pane.
             </p>
         </section>
+
     </article>
     @include('layouts.footer')
 @stop

@@ -7,16 +7,10 @@
         padding: 40px 0;
 
         text-align: center;
-        border-bottom: 1px solid $tertiaryColor;
+        border-bottom: $thinBorderGray;
         &:last-of-type {
             border-bottom: none;
         }
-    }
-
-
-    .project-type {
-        font-weight: 300;
-        padding-top: 7px;
     }
 
     .project-description {

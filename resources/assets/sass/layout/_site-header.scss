@@ -7,13 +7,17 @@
 #site-header {
 	padding: 0;
 	position: relative;
-    border-bottom: 1px solid #d4d4d4;
+    border-bottom: $thinBorderGray;
+
+	#site-logo {
+		text-transform: uppercase;
+	}
 
 	#site-nav {
-		font-size: 1.25em;
-		padding: 1.5em 0;
+		font-size: $largeFont;
+		padding: 24px 0;
 		@include breakpoint(tablet) {
-			padding: 1.25em 0;
+			padding: 20px 0;
 		}
 	}
 
@@ -50,7 +54,7 @@
 
 	#mobile-nav {
         display: none;
-		font-size: 1.25em;
+		font-size: $largeFont;
 		background: #fff;
 		width: 100%;
         -webkit-transform: translateZ(0);
@@ -62,7 +66,7 @@
 
 	#mobile-nav li {
 		text-align: right;
-		border-top: 1px solid $tertiaryColor;
+		border-top: $thinBorderGray;
 	}
 
 	#mobile-nav a {
@@ -84,11 +88,3 @@
 
 }
 
-#page-header {
-    font-weight: 600;
-    border-bottom: 1px solid #d4d4d4;
-    @include breakpoint(phablet) {
-        padding: 1em 0;
-    }
-
- }

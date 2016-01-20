@@ -1,15 +1,15 @@
 .btn {
     display: inline-block;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: $baseBorderRadius;
     width: 200px;
-    padding: 2.5px 5px;
-    font-size: .9em;
-    line-height: 1.5em;
+    padding: 4px 5px;
+    font-size: $smallFont;
+
 }
 
 .btn-project-link {
-    border: 2px solid opacity($secondaryColor, .5);
+    border: 2px solid opacity($pastelTeal, .5);
     margin: 10px 0;
     @include breakpoint(mobile-phone) {
         display: block;
@@ -22,6 +22,6 @@
         }
     }
     &:hover {
-        color: $secondaryColor;
+        color: $pastelTeal;
     }
 }

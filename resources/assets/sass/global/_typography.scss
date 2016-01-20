@@ -5,7 +5,7 @@
 |*/
 
 body {
-	font: 100% 'Open Sans', sans-serif;
+	font: 100% $baseFont;
     @include breakpoint(mobile-phone) {
         font-size: 90%;
     }
@@ -21,74 +21,38 @@ h1 {
 }
 
 h2 {
-    font-size: 1.50em;
+    font-size: 1.5em;
 }
 
-h3,
-h4,
-h5,
-h6 {
+h3, h4, h5, h6 {
     font-size: 1.25em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-nav#site-nav ul,
-nav#mobile-nav ul {
+h1, h2, h3, h4, h5, h6, #site-header nav ul {
 	text-transform: capitalize;
 }
 
-div#site-logo {
-	text-transform: uppercase;
-}
+
 
 p {
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 1.5em;
     @include breakpoint(iphone5-landscape) {
         line-height: 1.7em;
-    }
-    @include breakpoint(iphone5-landscape) {
         font-size: .7em;
     }
 }
 
-a {
-	color: #000;
+.hightlight {
+	color: $pastelTeal;
 }
 
-p a {
-	color: $secondaryColor;
-}
-
-a:hover {
-	color: $secondaryColor;
-    text-decoration: none;
-}
-
-a:focus {
-
-}
-
-a:active {
-
-}
-
-.light {
-	font-weight: 300;
-}
-
-.hightlight,
-.submission-success {
-	color: $secondaryColor;
+.lightweight-font {
+    font-weight: 300;
 }
 
 .error {
-	color: rgb(207, 0, 15);
+	color: $pastelRed;
 }
 
 .font-small {

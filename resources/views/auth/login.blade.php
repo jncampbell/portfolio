@@ -4,16 +4,16 @@
 @stop
 @section('content')
     @include('layouts.header')
+    <header id="page-header">
+        <h1>Login</h1>
+    </header>
+    <div class="container-90">
 
-    <div class="flex-container">
-        <header id="login-header">
-            <h1>Login</h1>
-        </header>
         <form method="POST" action="{{ url('/auth/login') }}" id="login-form">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
             @if(count($errors) > 0)
-                <div class="critical centered">
+                <div class="error login-error">
                     Incorrect email or password
                 </div>
             @endif

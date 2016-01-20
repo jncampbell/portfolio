@@ -8,8 +8,8 @@
         <div id='about-banner'>
             <img src='images/about-code.jpg' alt="code-photo">
         </div>
-        <header id="page-header" class='centered lg-cushion'>
-            <h1>about me</h1>
+        <header id="page-header">
+            <h1>About Me</h1>
         </header>
         <div id='page-wrap'>
 
@@ -30,13 +30,13 @@
 
             <section class="about-section">
 
-                <h2 class="centered">About this site</h2>
+                <h2>About this site</h2>
 
                 <p>
                     This site was built with Laravel, jQuery, HTML5, CSS and a bit of Bootstrap.
-                    The mockups and icons were downloaded from <a href="http://pixeden.com">Pixeden</a> and
-                    <a href="http://flaticon.com">Flaticon</a>, respectively, and I customized them in Photoshop.
-                    My contact form is powered by SwiftMailer and <a href="https://www.mandrill.com/">Mandrill</a>.
+                    The mockups and icons were downloaded from <a class="hightlight" href="http://pixeden.com">Pixeden</a> and
+                    <a class="hightlight" href="http://flaticon.com">Flaticon</a>, respectively, and I customized them in Photoshop.
+                    My contact form is powered by SwiftMailer and <a class="hightlight" href="https://www.mandrill.com/">Mandrill</a>.
                     All photos were taken by me.
                 </p>
             </section>

@@ -5,10 +5,10 @@
 @import 'global/variables';
 @import 'global/breakpoints';
 @import 'global/functions';
-@import 'global/position-classes';
 @import 'global/typography';
 
 
+@import 'components/links';
 @import 'components/buttons';
 @import 'components/forms';
 @import 'components/icons';
@@ -17,17 +17,18 @@
 
 
 @import 'layout/containers';
-@import 'layout/header';
-@import 'layout/footer';
+@import 'layout/site-header';
+@import 'layout/page-header';
+@import 'layout/site-footer';
 
 
-@import 'pages/global';
 @import 'pages/home';
 @import 'pages/about';
 @import 'pages/contact';
 @import 'pages/dashboard';
 
 
+@import 'projects/global';
 @import 'projects/index';
 @import 'projects/show';
 @import 'projects/create';
