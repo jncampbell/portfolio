@@ -7,9 +7,7 @@
         <section class='intro'>
             <img class='avatar' src='images/avatar.jpg' alt="avatar">
 
-            <h1>
-                James Campbell | <span class='hightlight'>Web Developer</span>
-            </h1>
+            <h1>James Campbell | <span class='hightlight'>Web Developer</span></h1>
         </section>
         <div class="row">
             <nav class="grow-on-hover col">
