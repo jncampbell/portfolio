@@ -1,0 +1,27 @@
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: $baseBorderRadius;
+    width: 200px;
+    padding: 4px 5px;
+    font-size: $smallFont;
+
+}
+
+.btn-project-link {
+    border: 2px solid opacity($pastelTeal, .5);
+    margin: 10px 0;
+    @include breakpoint(mobile-phone) {
+        display: block;
+        margin: 10px auto;
+    }
+    + .btn-project-link {
+        margin-left: 10px;
+        @include breakpoint(mobile-phone) {
+            margin: 10px auto;
+        }
+    }
+    &:hover {
+        color: $pastelTeal;
+    }
+}

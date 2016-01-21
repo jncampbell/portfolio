@@ -1,0 +1,31 @@
+//Fonts
+$baseFont: 'Open Sans', sans-serif;
+$largeFont: 1.25em;
+$smallFont : .85em;
+
+
+//Border Radius
+$baseBorderRadius: 5px;
+
+//Colors
+$white: rgb(255, 255, 255);
+$pastelTeal: rgb(0, 181, 181);
+$green: rgb(58, 194, 137);
+$blue: 1px solid rgb(70, 160, 220);
+$orange: 1px solid rgb(240, 95, 79);
+$lightGray: rgb(212, 212, 212);
+$pastelRed: rgb(213, 107, 113);
+
+//Borders
+$thinBorderOrange: 1px solid $orange;
+$thinBorderBlue: 1px solid $blue;
+$thinBorderGreen: 1px solid $green;
+
+$thinBorderRed: 1px solid $pastelRed;
+$thickBorderRed: 2px solid $pastelRed;
+
+$thinBorderTeal: 1px solid $pastelTeal;
+$thickBorderTeal: 2px solid $pastelTeal;
+
+$thinBorderGray: 1px solid $lightGray;
+$thickBorderGray: 2px solid $lightGray;

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Auth\Guard;
+use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Visitor;
@@ -11,6 +11,10 @@ use App\Visitor;
 class PageController extends Controller
 {
 
+    public function __construct()
+    {
+        $this->middleware('auth', ['only' => 'dashboard']);
+    }
     /**
      * Show the home page
      *

@@ -1,0 +1,22 @@
+#project-index {
+
+    max-width: 800px;
+    margin: 0 auto;
+
+    .project-container {
+        padding: 40px 0;
+
+        text-align: center;
+        border-bottom: $thinBorderGray;
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+
+    .project-description {
+        padding: 15px 0;
+    }
+
+
+
+}

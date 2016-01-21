@@ -1,7 +1,11 @@
 #dashboard {
     section {
-        border-bottom: 1px solid #d4d4d4;
+        border-bottom: $thinBorderGray;
         text-align: center;
+    }
+
+    .dashboard-section {
+        padding: 50px 5px;
     }
 
     .lg-icon {
@@ -17,7 +21,7 @@
             max-width: 150px;
             text-align: center;
             height: 150px;
-            border: 1px solid #d4d4d4;
+            border: $thinBorderGray;
             border-radius: 10px;
         }
 
@@ -31,15 +35,15 @@
     }
 
     .new-option:hover {
-        border: 1px solid rgb(58, 194, 137);
+        border: $thinBorderGreen;
     }
 
     .edit-option:hover {
-        border: 1px solid rgb(70, 160, 220);
+        border: $thinBorderBlue;
     }
 
     .delete-option:hover {
-        border: 1px solid rgb(240, 95, 79);
+        border: $thinBorderOrange;
     }
 
     .option a {
@@ -74,7 +78,7 @@
     #contact-info-form .input-container {
         display: flex;
         justify-content: center;
-        align-item: center;
+        align-items: center;
     }
 
     #contact-info-form label {

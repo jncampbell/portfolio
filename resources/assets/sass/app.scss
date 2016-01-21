@@ -1,6 +1,35 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-@import 'projects/all';
-@import 'helpers/all';
-@import 'layout/all';
-@import 'universal/all';
-@import 'pages/all';
+
+
+@import 'global/reset';
+@import 'global/variables';
+@import 'global/breakpoints';
+@import 'global/functions';
+@import 'global/typography';
+
+
+@import 'components/links';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/icons';
+@import 'components/images';
+@import 'components/slideshow';
+
+
+@import 'layout/containers';
+@import 'layout/site-header';
+@import 'layout/page-header';
+@import 'layout/site-footer';
+
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/dashboard';
+
+
+@import 'projects/global';
+@import 'projects/index';
+@import 'projects/show';
+@import 'projects/create';
+

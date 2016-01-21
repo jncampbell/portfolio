@@ -8,13 +8,13 @@
         <div id='contact-banner'>
             <img src='images/desktop.jpg' alt="desktop-photo">
         </div>
-        <header id="page-header" class="centered lg-cushion">
-            <h1>contact me</h1>
+        <header id="page-header">
+            <h1>Contact Me</h1>
         </header>
 
         <div class='section-broadcast'>
             @if (Session::has('success'))
-                <p class="submission-success">{{ Session::get('success') }}</p>
+                <p class="hightlight">{{ Session::get('success') }}</p>
             @elseif($errors->all())
                 @if ($errors->count() > 1)
                     <p class="error"> Oops! There were some errors.</p>
@@ -22,7 +22,7 @@
                     <p class="error"> Oops! There was an error.</p>
                 @endif
             @else
-                <p class='light'>I check my messages pretty often, so I'll usually respond within 24 hours.</p>
+                <p class='lightweight-font'>I check my messages pretty often, so I'll usually respond within 24 hours.</p>
             @endif
         </div>
         <form id='contact-form' method='POST' action='#' novalidate>

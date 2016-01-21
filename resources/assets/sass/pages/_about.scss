@@ -1,6 +1,6 @@
-article#about {
+#about {
 
-	div#about-banner {
+	#about-banner {
 		height: 200px;
 		width: 100%;
 		overflow: hidden;
@@ -14,17 +14,14 @@ article#about {
         }
 	}
 
-	section.about-section {
+    .about-section {
 		max-width: 600px;
-		margin: 40px auto;
+		margin: 30px auto;
 	}
 
-	section.about-section p {
-		margin-bottom: 2em;
-	}
-
-    section.about-section h2 {
-        margin: 3em 0 1em 0;
+    .about-section h2 {
+        margin-bottom: 20px;
+        text-align: center;
     }
 
 }
