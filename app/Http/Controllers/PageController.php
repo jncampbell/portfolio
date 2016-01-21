@@ -11,6 +11,10 @@ use App\Visitor;
 class PageController extends Controller
 {
 
+    public function __construct()
+    {
+        $this->middleware('auth', ['only' => 'dashboard']);
+    }
     /**
      * Show the home page
      *
