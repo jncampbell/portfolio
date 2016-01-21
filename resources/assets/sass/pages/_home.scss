@@ -34,34 +34,25 @@ article#home {
         }
     }
 
-    .row {
-        margin-left: 0;
-        margin-right: 0;
-        text-align: center;
-    }
-
-    .col {
-        display: inline-block;
-        @include breakpoint(mobile-phone) {
-            display: block;
-        }
-    }
-
-    .col + .col {
-        margin-left: 60px;
-        @include breakpoint(mobile-phone) {
-            margin-left: 0;
-        }
-    }
-
     nav {
-        text-align: center;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        @include breakpoint(mobile-phone) {
+            flex-direction: column;
+        }
     }
 
     nav ul {
         margin-top: 30px;
         animation: slidein 2s;
-        text-align: center;
+        + ul {
+            margin-left: 60px;
+            @include breakpoint(mobile-phone) {
+                margin-left: 0;
+            }
+        }
         @include breakpoint(mobile-phone) {
             margin-top: 25px;
         }
@@ -96,11 +87,6 @@ article#home {
         }
     }
 
-
-    nav img {
-        margin-bottom: 5px;
-    }
-
     nav a {
         display: inline-block;
         width: 100%;
@@ -110,8 +96,11 @@ article#home {
         }
     }
 
-    //Animations
+    nav img {
+        margin-bottom: 5px;
+    }
 
+    //Animations
     .hover-effect {
         transform: scale(1.25, 1.25);
     }
