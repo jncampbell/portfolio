@@ -14,7 +14,7 @@
 Route::get('/', 'PageController@home');
 Route::get('/about', 'PageController@about');
 Route::get('/projects', 'PageController@projects');
-Route::get('/projects/club-app', 'PageController@clubApp');
+Route::get('/projects/keltrist', 'PageController@keltrist');
 Route::get('/projects/wheresmyspaceship', 'PageController@wheresmyspaceship');
 Route::get('/projects/timer', 'PageController@timer');
 

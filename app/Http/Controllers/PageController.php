@@ -40,13 +40,13 @@ class PageController extends Controller
 
     /**
      *
-     * Show the club app showcase
+     * Show the Keltrist showcase
      *
      * @return \Illuminate\View\View
      */
-    public function clubApp()
+    public function keltrist()
     {
-        return view('projects.clubApp');
+        return view('projects.keltrist');
     }
 
     /**

@@ -6,14 +6,14 @@
     @include('layouts.header')
 
     <header id="page-header">
-        <h1> Club App </h1>
+        <h1> Keltrist </h1>
         <p class="project-type">PHP Web Application</p>
     </header>
 
     <article id="project-show">
         <div id="page-wrap">
             <section class="project-section">
-                <img src="/images/club-app-device-showcase.jpg" alt="club-app-device-showcase" class="screenshot">
+                <img src="/images/keltrist-family.png" alt="club-app-device-showcase" class="screenshot">
                 <p>
                     This web application was born out of the frustration my friends and I experienced whenever we
                     decided to go to a nightclub. We'd spend way too much time trying to find parties and even
@@ -23,12 +23,12 @@
             </section>
 
             <section class="project-section">
-                <img src="/images/standing-mobile-device-club-app.jpg" alt="standing-mobile-device-showcase"
+                <img src="/images/keltrist-standing.png" alt="standing-mobile-device-showcase"
                      class="screenshot"/>
             </section>
 
             <section class="project-section">
-                <img src="/images/event-page-breakdown.jpg" alt="event-page-breakdown" class="screenshot"/>
+                <img src="/images/keltrist-info.png" alt="event-page-breakdown" class="screenshot"/>
             </section>
 
             <section class="project-section">
@@ -39,8 +39,8 @@
                     </a> API to create a custom class to reformat dates for view presentation.
                 </p>
                 @include('partials.slideshow',
-                 ['image_1' => '/images/event-show-screenshot.jpg', 'alt_1' => 'event-show-screenshot'],
-                 ['image_2' => '/images/event-show-code.jpg', 'alt_2' => 'event-show-code']
+                 ['image_1' => '/images/keltrist-event-screenshot.png', 'alt_1' => 'event-screenshot'],
+                 ['image_2' => '/images/keltrist-event-html.png', 'alt_2' => 'event-html']
                 )
             </section>
         </div>
